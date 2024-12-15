@@ -2,6 +2,7 @@
   <div>
     <BookClubHeader />
     <NuxtPage />
+    <BookClubFooter />
   </div>
 </template>
 
@@ -12,6 +13,6 @@ const bookStore = useBookStore();
 
 onMounted(() => {
   bookStore.fetchBooks();
-  // navigateTo('/all')
+  navigateTo('/all')
 });
 </script>

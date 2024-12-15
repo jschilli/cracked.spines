@@ -28,7 +28,7 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 
 const statusMap = {
-  'Selected': 'Selected',
+  'Selected': 'Upcoming',
   'Candidate': 'Candidates',
   'Read': 'Read',
   'Relegated': 'Relegated'

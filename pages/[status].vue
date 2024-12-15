@@ -9,6 +9,8 @@
         :book="book"
       />
     </div>
+    <BookClubFooter />
+
   </div>
 </template>
 

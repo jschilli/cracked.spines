@@ -1,5 +1,7 @@
 <template>
+  
   <div class="container mx-auto px-4 py-8">
+    <BookClubHeader />
     <h1 class="text-2xl font-bold mb-4">All Books</h1>
     <div v-if="books.length">
       <div v-for="status in VALID_STATUSES" :key="status" class="mb-8">
@@ -16,6 +18,8 @@
     <div v-else>
       Loading books...
     </div>
+    <BookClubFooter />
+
   </div>
 </template>
 
