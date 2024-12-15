@@ -9,7 +9,20 @@ export const useBookStore = defineStore('books', {
 
   getters: {
     getBooksByStatus: (state) => (status: BookStatus) => {
-      return state.books.filter(book => book.status === status);
+      return state.books.filter(book => book.status === status).sort((a, b) => {
+        if (!a.selectedForDate) return 1
+        if (!b.selectedForDate) return -1
+        
+        const dateA = new Date(a.selectedForDate)
+        const dateB = new Date(b.selectedForDate)
+        
+        if (isNaN(dateA.getTime())) return 1
+        if (isNaN(dateB.getTime())) return -1
+        
+        if (dateA < dateB) return -1
+        if (dateA > dateB) return 1
+        return 0
+      });
     },
     
     selectedBooks: (state) => {
