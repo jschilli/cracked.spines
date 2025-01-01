@@ -9,9 +9,9 @@ defineProps<{
 </script>
 
 <template>
-  <div class="book-card bg-white rounded-lg shadow-md overflow-hidden max-w-sm h-full flex flex-col">
+  <div class="book-card bg-white border-2 border-gray-200 rounded-lg shadow-md overflow-hidden max-w-sm h-full flex flex-col">
     <div class="relative">
-      <img :src="book.coverImage" :alt="book.title" class="w-48 object-contain mx-auto" />
+      <img :src="book.coverImage" :alt="book.title" class="w-48 p-1 m-6 border-2 border-gray-300 object-contain mx-auto" />
       <div class="absolute top-2 right-2">
         <StatusBadge :status="book.status" />
       </div>
