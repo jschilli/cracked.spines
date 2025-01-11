@@ -189,10 +189,10 @@
     "isbn": "9780393881561",
     "status": "Candidate",
     "createdAt": "2024-02-05T13:21:48.398Z",
-    "updatedAt": "2025-01-01T20:07:48.289Z",
+    "updatedAt": "2025-01-11T15:26:51.238Z",
     "coverImage": "images/9780393881561.jpg",
     "link": "https://goodreads.com/search?q=9780393881561&ref=nav_sb_ss_l_13",
-    "pollCount": 13
+    "pollCount": 14
   },
   {
     "id": "16",
@@ -201,10 +201,10 @@
     "isbn": "9780316296939",
     "status": "Candidate",
     "createdAt": "2024-02-05T13:21:48.398Z",
-    "updatedAt": "2025-01-01T20:07:48.298Z",
+    "updatedAt": "2025-01-11T15:26:51.260Z",
     "coverImage": "images/9780316296939.jpg",
     "link": "https://goodreads.com/search?q=9780316296939&ref=nav_sb_ss_l_13",
-    "pollCount": 13
+    "pollCount": 14
   },
   {
     "id": "17",
@@ -331,10 +331,10 @@
     "pages": 656,
     "status": "Candidate",
     "createdAt": "2024-06-07T16:34:55.059Z",
-    "updatedAt": "2025-01-01T20:07:48.305Z",
+    "updatedAt": "2025-01-11T15:26:51.276Z",
     "coverImage": "images/0679602836.jpg",
     "link": "https://www.goodreads.com/book/show/16286.The_Magus",
-    "pollCount": 8
+    "pollCount": 9
   },
   {
     "id": "27",
@@ -410,10 +410,10 @@
     "pages": 240,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-01-01T20:07:48.312Z",
+    "updatedAt": "2025-01-11T15:26:51.293Z",
     "coverImage": "images/9780553213973.jpg",
     "link": "https://www.goodreads.com/book/show/32829",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "33",
@@ -424,10 +424,10 @@
     "pages": 472,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-01-01T20:07:48.319Z",
+    "updatedAt": "2025-01-11T15:26:51.310Z",
     "coverImage": "images/9780765377067.jpg",
     "link": "https://www.goodreads.com/book/show/20518872",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "34",
@@ -438,10 +438,10 @@
     "pages": 1276,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-01-01T20:07:48.325Z",
+    "updatedAt": "2025-01-11T15:26:51.326Z",
     "coverImage": "images/0140449264.jpg",
     "link": "https://www.goodreads.com/book/show/7126",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "35",
@@ -496,10 +496,10 @@
     "pages": 416,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-01-01T20:07:48.332Z",
+    "updatedAt": "2025-01-11T15:26:51.340Z",
     "coverImage": "images/9780767913737.jpg",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "39",
@@ -509,10 +509,10 @@
     "pages": 304,
     "status": "Candidate",
     "createdAt": "2024-12-13T09:16:59.089Z",
-    "updatedAt": "2025-01-01T20:07:48.338Z",
+    "updatedAt": "2025-01-11T15:26:51.353Z",
     "coverImage": "images/9780060891565.jpg",
     "link": "https://www.goodreads.com/book/show/7673",
-    "pollCount": 2
+    "pollCount": 3
   },
   {
     "id": "40",
@@ -522,10 +522,10 @@
     "pages": 894,
     "status": "Candidate",
     "createdAt": "2024-12-13T09:16:59.089Z",
-    "updatedAt": "2025-01-01T20:07:48.344Z",
+    "updatedAt": "2025-01-11T15:26:51.365Z",
     "coverImage": "images/9780060827885.jpg",
     "link": "https://www.goodreads.com/book/show/42696",
-    "pollCount": 2
+    "pollCount": 3
   },
   {
     "title": "The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook",
@@ -538,7 +538,7 @@
     "link": "https://www.goodreads.com/book/show/191746386-the-wide-wide-sea",
     "id": "1735762114376",
     "createdAt": "2025-01-01T20:08:34.376Z",
-    "updatedAt": "2025-01-01T20:08:34.376Z",
-    "pollCount": 0
+    "updatedAt": "2025-01-11T15:26:51.376Z",
+    "pollCount": 1
   }
 ]
