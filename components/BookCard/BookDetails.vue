@@ -10,7 +10,7 @@ const { pageCount, pollCount, selectedDate, status } = defineProps<{
 }>();
 
 const formattedDate = computed(() => 
-  selectedDate ? formatDisplayDate(selectedDate) : ''
+  selectedDate ? formatDisplayDate(new Date(selectedDate + 'T00:00:00')) : ''
 );
 const dateLabel = computed(() => 
   status === 'Read' ? 'Read:' : 'Selected:'
