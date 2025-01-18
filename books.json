@@ -541,5 +541,33 @@
     "createdAt": "2025-01-01T20:08:34.376Z",
     "updatedAt": "2025-01-11T15:26:51.376Z",
     "pollCount": 1
+  },
+  {
+    "title": "The Infernal Machine: A True Story of Dynamite, Terror, and the Rise of the Modern Detective",
+    "author": "Steven Johnson",
+    "pages": 368,
+    "isbn": "9780593443958",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9780593443958.jpg",
+    "link": "https://www.goodreads.com/book/show/195430698",
+    "id": "1737228877431",
+    "createdAt": "2025-01-18T19:34:37.431Z",
+    "updatedAt": "2025-01-18T19:34:37.431Z",
+    "pollCount": 0
+  },
+  {
+    "title": "The Mysterious Case of Rudolf Diesel: Genius, Power, and Deception on the Eve of World War I",
+    "author": "Douglas Brunt",
+    "pages": 378,
+    "isbn": "9781982169909",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9781982169909.jpg",
+    "link": "https://www.goodreads.com/book/show/101160707",
+    "id": "1737228896518",
+    "createdAt": "2025-01-18T19:34:56.518Z",
+    "updatedAt": "2025-01-18T19:34:56.518Z",
+    "pollCount": 0
   }
 ]
