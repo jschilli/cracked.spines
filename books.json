@@ -569,5 +569,19 @@
     "createdAt": "2025-01-18T19:34:56.518Z",
     "updatedAt": "2025-01-18T19:34:56.518Z",
     "pollCount": 0
+  },
+  {
+    "title": "The Spy and the Traitor: The Greatest Espionage Story of the Cold War",
+    "author": "Ben Macintyre",
+    "pages": 384,
+    "isbn": "9780771060335",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9780771060335.jpg",
+    "link": "https://www.goodreads.com/book/show/37542581",
+    "id": "1737809540273",
+    "createdAt": "2025-01-25T12:52:20.273Z",
+    "updatedAt": "2025-01-25T12:52:20.273Z",
+    "pollCount": 0
   }
 ]
