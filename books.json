@@ -187,24 +187,24 @@
     "title": "The Premonition",
     "author": "Michael Lewis",
     "isbn": "9780393881561",
-    "status": "Candidate",
+    "status": "Relegated",
     "createdAt": "2024-02-05T13:21:48.398Z",
-    "updatedAt": "2025-01-11T15:26:51.238Z",
+    "updatedAt": "2025-03-05T00:02:00.604Z",
     "coverImage": "images/9780393881561.jpg",
     "link": "https://goodreads.com/search?q=9780393881561&ref=nav_sb_ss_l_13",
-    "pollCount": 14
+    "pollCount": 15
   },
   {
     "id": "16",
     "title": "The Bomber Mafia",
     "author": "Malcolm Gladwell",
     "isbn": "9780316296939",
-    "status": "Candidate",
+    "status": "Relegated",
     "createdAt": "2024-02-05T13:21:48.398Z",
-    "updatedAt": "2025-01-11T15:26:51.260Z",
+    "updatedAt": "2025-03-05T00:02:02.464Z",
     "coverImage": "images/9780316296939.jpg",
     "link": "https://goodreads.com/search?q=9780316296939&ref=nav_sb_ss_l_13",
-    "pollCount": 14
+    "pollCount": 15
   },
   {
     "id": "17",
@@ -331,10 +331,10 @@
     "pages": 656,
     "status": "Candidate",
     "createdAt": "2024-06-07T16:34:55.059Z",
-    "updatedAt": "2025-01-11T15:26:51.276Z",
+    "updatedAt": "2025-03-04T23:57:50.123Z",
     "coverImage": "images/0679602836.jpg",
     "link": "https://www.goodreads.com/book/show/16286.The_Magus",
-    "pollCount": 9
+    "pollCount": 10
   },
   {
     "id": "27",
@@ -410,10 +410,10 @@
     "pages": 240,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-01-11T15:26:51.293Z",
+    "updatedAt": "2025-03-04T23:57:50.134Z",
     "coverImage": "images/9780553213973.jpg",
     "link": "https://www.goodreads.com/book/show/32829",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "33",
@@ -439,10 +439,10 @@
     "pages": 1276,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-01-11T15:26:51.326Z",
+    "updatedAt": "2025-03-04T23:57:50.147Z",
     "coverImage": "images/0140449264.jpg",
     "link": "https://www.goodreads.com/book/show/7126",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "35",
@@ -451,10 +451,10 @@
     "isbn": "9780886192198",
     "goodreadsId": "1023492",
     "pages": 245,
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2025-02-20",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2024-09-13T09:16:59.089Z",
+    "updatedAt": "2025-03-05T00:01:34.597Z",
     "coverImage": "images/9780886192198.jpg",
     "link": "https://www.goodreads.com/book/show/1023492",
     "pollCount": 1
@@ -497,10 +497,10 @@
     "pages": 416,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-01-11T15:26:51.340Z",
+    "updatedAt": "2025-03-04T23:57:50.162Z",
     "coverImage": "images/9780767913737.jpg",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "39",
@@ -510,10 +510,10 @@
     "pages": 304,
     "status": "Candidate",
     "createdAt": "2024-12-13T09:16:59.089Z",
-    "updatedAt": "2025-01-11T15:26:51.353Z",
+    "updatedAt": "2025-03-04T23:57:50.173Z",
     "coverImage": "images/9780060891565.jpg",
     "link": "https://www.goodreads.com/book/show/7673",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "40",
@@ -523,10 +523,10 @@
     "pages": 894,
     "status": "Candidate",
     "createdAt": "2024-12-13T09:16:59.089Z",
-    "updatedAt": "2025-01-11T15:26:51.365Z",
+    "updatedAt": "2025-03-04T23:57:50.183Z",
     "coverImage": "images/9780060827885.jpg",
     "link": "https://www.goodreads.com/book/show/42696",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "title": "The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook",
@@ -539,8 +539,8 @@
     "link": "https://www.goodreads.com/book/show/191746386-the-wide-wide-sea",
     "id": "1735762114376",
     "createdAt": "2025-01-01T20:08:34.376Z",
-    "updatedAt": "2025-01-11T15:26:51.376Z",
-    "pollCount": 1
+    "updatedAt": "2025-03-04T23:57:50.188Z",
+    "pollCount": 2
   },
   {
     "title": "The Infernal Machine: A True Story of Dynamite, Terror, and the Rise of the Modern Detective",
@@ -553,8 +553,8 @@
     "link": "https://www.goodreads.com/book/show/195430698",
     "id": "1737228877431",
     "createdAt": "2025-01-18T19:34:37.431Z",
-    "updatedAt": "2025-01-18T19:34:37.431Z",
-    "pollCount": 0
+    "updatedAt": "2025-03-04T23:57:50.192Z",
+    "pollCount": 1
   },
   {
     "title": "The Mysterious Case of Rudolf Diesel: Genius, Power, and Deception on the Eve of World War I",
@@ -567,21 +567,21 @@
     "link": "https://www.goodreads.com/book/show/101160707",
     "id": "1737228896518",
     "createdAt": "2025-01-18T19:34:56.518Z",
-    "updatedAt": "2025-01-18T19:34:56.518Z",
-    "pollCount": 0
+    "updatedAt": "2025-03-04T23:57:50.198Z",
+    "pollCount": 1
   },
   {
     "title": "The Spy and the Traitor: The Greatest Espionage Story of the Cold War",
     "author": "Ben Macintyre",
     "pages": 384,
     "isbn": "9780771060335",
-    "status": "Candidate",
-    "selectedForDate": null,
+    "status": "Selected",
+    "selectedForDate": "2025-05-15",
     "coverImage": "images/9780771060335.jpg",
     "link": "https://www.goodreads.com/book/show/37542581",
     "id": "1737809540273",
     "createdAt": "2025-01-25T12:52:20.273Z",
-    "updatedAt": "2025-01-25T12:52:20.273Z",
-    "pollCount": 0
+    "updatedAt": "2025-03-04T23:57:57.417Z",
+    "pollCount": 1
   }
 ]
