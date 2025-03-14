@@ -583,5 +583,33 @@
     "createdAt": "2025-01-25T12:52:20.273Z",
     "updatedAt": "2025-03-04T23:57:57.417Z",
     "pollCount": 1
+  },
+  {
+    "title": "A Prayer for Owen Meany",
+    "author": "John Irving",
+    "pages": 637,
+    "isbn": "9780552135399",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9780552135399.jpg",
+    "link": "https://www.goodreads.com/book/show/4473.A_Prayer_for_Owen_Meany?ac=1&from_search=true&qid=JwzcEzWfle&rank=1",
+    "id": "1741994480887",
+    "createdAt": "2025-03-14T23:21:20.887Z",
+    "updatedAt": "2025-03-14T23:21:20.887Z",
+    "pollCount": 0
+  },
+  {
+    "title": "Red Notice: A True Story of High Finance, Murder, and One Man's Fight for Justice",
+    "author": "Bill Browder",
+    "pages": 380,
+    "isbn": "9781476755717",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9781476755717.jpg",
+    "link": "https://www.goodreads.com/book/show/22609522-red-notice?ac=1&from_search=true&qid=pU6b7UGN91&rank=1",
+    "id": "1741994500385",
+    "createdAt": "2025-03-14T23:21:40.385Z",
+    "updatedAt": "2025-03-14T23:21:40.385Z",
+    "pollCount": 0
   }
 ]
