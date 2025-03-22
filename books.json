@@ -331,10 +331,10 @@
     "pages": 656,
     "status": "Candidate",
     "createdAt": "2024-06-07T16:34:55.059Z",
-    "updatedAt": "2025-03-04T23:57:50.123Z",
+    "updatedAt": "2025-03-22T13:26:34.357Z",
     "coverImage": "images/0679602836.jpg",
     "link": "https://www.goodreads.com/book/show/16286.The_Magus",
-    "pollCount": 10
+    "pollCount": 11
   },
   {
     "id": "27",
@@ -408,12 +408,13 @@
     "isbn": "9780553213973",
     "goodreadsId": "32829",
     "pages": 240,
-    "status": "Candidate",
+    "status": "Selected",
+    "selectedForDate": "2025-06-19",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-03-04T23:57:50.134Z",
+    "updatedAt": "2025-03-22T13:28:56.614Z",
     "coverImage": "images/9780553213973.jpg",
     "link": "https://www.goodreads.com/book/show/32829",
-    "pollCount": 5
+    "pollCount": 6
   },
   {
     "id": "33",
@@ -439,10 +440,10 @@
     "pages": 1276,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-03-04T23:57:50.147Z",
+    "updatedAt": "2025-03-22T13:26:34.386Z",
     "coverImage": "images/0140449264.jpg",
     "link": "https://www.goodreads.com/book/show/7126",
-    "pollCount": 5
+    "pollCount": 6
   },
   {
     "id": "35",
@@ -466,10 +467,10 @@
     "isbn": "9780525426769",
     "goodreadsId": "38363272",
     "pages": 366,
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2025-03-20",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-01-01T20:03:01.870Z",
+    "updatedAt": "2025-03-22T13:28:31.047Z",
     "coverImage": "images/9780525426769.jpg",
     "link": "https://www.goodreads.com/book/show/38363272",
     "pollCount": 2
@@ -497,10 +498,10 @@
     "pages": 416,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-03-04T23:57:50.162Z",
+    "updatedAt": "2025-03-22T13:26:34.396Z",
     "coverImage": "images/9780767913737.jpg",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 5
+    "pollCount": 6
   },
   {
     "id": "39",
@@ -508,12 +509,12 @@
     "author": "Michael Chricton",
     "isbn": "9780060891565",
     "pages": 304,
-    "status": "Candidate",
+    "status": "Relegated",
     "createdAt": "2024-12-13T09:16:59.089Z",
-    "updatedAt": "2025-03-04T23:57:50.173Z",
+    "updatedAt": "2025-03-22T13:28:48.677Z",
     "coverImage": "images/9780060891565.jpg",
     "link": "https://www.goodreads.com/book/show/7673",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "40",
@@ -523,10 +524,10 @@
     "pages": 894,
     "status": "Candidate",
     "createdAt": "2024-12-13T09:16:59.089Z",
-    "updatedAt": "2025-03-04T23:57:50.183Z",
+    "updatedAt": "2025-03-22T13:26:34.417Z",
     "coverImage": "images/9780060827885.jpg",
     "link": "https://www.goodreads.com/book/show/42696",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "title": "The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook",
@@ -539,8 +540,8 @@
     "link": "https://www.goodreads.com/book/show/191746386-the-wide-wide-sea",
     "id": "1735762114376",
     "createdAt": "2025-01-01T20:08:34.376Z",
-    "updatedAt": "2025-03-04T23:57:50.188Z",
-    "pollCount": 2
+    "updatedAt": "2025-03-22T13:26:34.436Z",
+    "pollCount": 3
   },
   {
     "title": "The Infernal Machine: A True Story of Dynamite, Terror, and the Rise of the Modern Detective",
@@ -553,8 +554,8 @@
     "link": "https://www.goodreads.com/book/show/195430698",
     "id": "1737228877431",
     "createdAt": "2025-01-18T19:34:37.431Z",
-    "updatedAt": "2025-03-04T23:57:50.192Z",
-    "pollCount": 1
+    "updatedAt": "2025-03-22T13:26:34.446Z",
+    "pollCount": 2
   },
   {
     "title": "The Mysterious Case of Rudolf Diesel: Genius, Power, and Deception on the Eve of World War I",
@@ -567,8 +568,8 @@
     "link": "https://www.goodreads.com/book/show/101160707",
     "id": "1737228896518",
     "createdAt": "2025-01-18T19:34:56.518Z",
-    "updatedAt": "2025-03-04T23:57:50.198Z",
-    "pollCount": 1
+    "updatedAt": "2025-03-22T13:26:34.456Z",
+    "pollCount": 2
   },
   {
     "title": "The Spy and the Traitor: The Greatest Espionage Story of the Cold War",
@@ -595,8 +596,8 @@
     "link": "https://www.goodreads.com/book/show/4473.A_Prayer_for_Owen_Meany?ac=1&from_search=true&qid=JwzcEzWfle&rank=1",
     "id": "1741994480887",
     "createdAt": "2025-03-14T23:21:20.887Z",
-    "updatedAt": "2025-03-14T23:21:20.887Z",
-    "pollCount": 0
+    "updatedAt": "2025-03-22T13:26:34.464Z",
+    "pollCount": 1
   },
   {
     "title": "Red Notice: A True Story of High Finance, Murder, and One Man's Fight for Justice",
@@ -609,7 +610,21 @@
     "link": "https://www.goodreads.com/book/show/22609522-red-notice?ac=1&from_search=true&qid=pU6b7UGN91&rank=1",
     "id": "1741994500385",
     "createdAt": "2025-03-14T23:21:40.385Z",
-    "updatedAt": "2025-03-14T23:21:40.385Z",
+    "updatedAt": "2025-03-22T13:26:34.473Z",
+    "pollCount": 1
+  },
+  {
+    "title": "James",
+    "author": "Percival Everett",
+    "pages": 303,
+    "isbn": "9780385550369",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9780385550369.jpg",
+    "link": "https://www.goodreads.com/book/show/173754979",
+    "id": "1742650087279",
+    "createdAt": "2025-03-22T13:28:07.279Z",
+    "updatedAt": "2025-03-22T13:28:07.279Z",
     "pollCount": 0
   }
 ]
