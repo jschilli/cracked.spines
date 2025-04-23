@@ -331,10 +331,10 @@
     "pages": 656,
     "status": "Candidate",
     "createdAt": "2024-06-07T16:34:55.059Z",
-    "updatedAt": "2025-03-22T13:26:34.357Z",
+    "updatedAt": "2025-04-23T04:48:56.577Z",
     "coverImage": "images/0679602836.jpg",
     "link": "https://www.goodreads.com/book/show/16286.The_Magus",
-    "pollCount": 11
+    "pollCount": 12
   },
   {
     "id": "27",
@@ -423,10 +423,10 @@
     "isbn": "9780765377067",
     "goodreadsId": "20518872",
     "pages": 472,
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2025-04-17",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-01-17T02:24:20.627Z",
+    "updatedAt": "2025-04-23T04:50:06.310Z",
     "coverImage": "images/9780765377067.jpg",
     "link": "https://www.goodreads.com/book/show/20518872",
     "pollCount": 4
@@ -440,10 +440,10 @@
     "pages": 1276,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-03-22T13:26:34.386Z",
+    "updatedAt": "2025-04-23T04:48:56.601Z",
     "coverImage": "images/0140449264.jpg",
     "link": "https://www.goodreads.com/book/show/7126",
-    "pollCount": 6
+    "pollCount": 7
   },
   {
     "id": "35",
@@ -498,10 +498,10 @@
     "pages": 416,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-03-22T13:26:34.396Z",
+    "updatedAt": "2025-04-23T04:48:56.619Z",
     "coverImage": "images/9780767913737.jpg",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 6
+    "pollCount": 7
   },
   {
     "id": "39",
@@ -524,10 +524,10 @@
     "pages": 894,
     "status": "Candidate",
     "createdAt": "2024-12-13T09:16:59.089Z",
-    "updatedAt": "2025-03-22T13:26:34.417Z",
+    "updatedAt": "2025-04-23T04:48:56.627Z",
     "coverImage": "images/9780060827885.jpg",
     "link": "https://www.goodreads.com/book/show/42696",
-    "pollCount": 5
+    "pollCount": 6
   },
   {
     "title": "The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook",
@@ -540,8 +540,8 @@
     "link": "https://www.goodreads.com/book/show/191746386-the-wide-wide-sea",
     "id": "1735762114376",
     "createdAt": "2025-01-01T20:08:34.376Z",
-    "updatedAt": "2025-03-22T13:26:34.436Z",
-    "pollCount": 3
+    "updatedAt": "2025-04-23T04:48:56.636Z",
+    "pollCount": 4
   },
   {
     "title": "The Infernal Machine: A True Story of Dynamite, Terror, and the Rise of the Modern Detective",
@@ -554,8 +554,8 @@
     "link": "https://www.goodreads.com/book/show/195430698",
     "id": "1737228877431",
     "createdAt": "2025-01-18T19:34:37.431Z",
-    "updatedAt": "2025-03-22T13:26:34.446Z",
-    "pollCount": 2
+    "updatedAt": "2025-04-23T04:48:56.653Z",
+    "pollCount": 3
   },
   {
     "title": "The Mysterious Case of Rudolf Diesel: Genius, Power, and Deception on the Eve of World War I",
@@ -568,8 +568,8 @@
     "link": "https://www.goodreads.com/book/show/101160707",
     "id": "1737228896518",
     "createdAt": "2025-01-18T19:34:56.518Z",
-    "updatedAt": "2025-03-22T13:26:34.456Z",
-    "pollCount": 2
+    "updatedAt": "2025-04-23T04:48:56.662Z",
+    "pollCount": 3
   },
   {
     "title": "The Spy and the Traitor: The Greatest Espionage Story of the Cold War",
@@ -596,8 +596,8 @@
     "link": "https://www.goodreads.com/book/show/4473.A_Prayer_for_Owen_Meany?ac=1&from_search=true&qid=JwzcEzWfle&rank=1",
     "id": "1741994480887",
     "createdAt": "2025-03-14T23:21:20.887Z",
-    "updatedAt": "2025-03-22T13:26:34.464Z",
-    "pollCount": 1
+    "updatedAt": "2025-04-23T04:48:56.666Z",
+    "pollCount": 2
   },
   {
     "title": "Red Notice: A True Story of High Finance, Murder, and One Man's Fight for Justice",
@@ -610,21 +610,21 @@
     "link": "https://www.goodreads.com/book/show/22609522-red-notice?ac=1&from_search=true&qid=pU6b7UGN91&rank=1",
     "id": "1741994500385",
     "createdAt": "2025-03-14T23:21:40.385Z",
-    "updatedAt": "2025-03-22T13:26:34.473Z",
-    "pollCount": 1
+    "updatedAt": "2025-04-23T04:48:56.670Z",
+    "pollCount": 2
   },
   {
     "title": "James",
     "author": "Percival Everett",
     "pages": 303,
     "isbn": "9780385550369",
-    "status": "Candidate",
-    "selectedForDate": null,
+    "status": "Selected",
+    "selectedForDate": "2025-07-17",
     "coverImage": "images/9780385550369.jpg",
     "link": "https://www.goodreads.com/book/show/173754979",
     "id": "1742650087279",
     "createdAt": "2025-03-22T13:28:07.279Z",
-    "updatedAt": "2025-03-22T13:28:07.279Z",
-    "pollCount": 0
+    "updatedAt": "2025-04-23T04:50:18.006Z",
+    "pollCount": 1
   }
 ]
