@@ -626,5 +626,19 @@
     "createdAt": "2025-03-22T13:28:07.279Z",
     "updatedAt": "2025-04-23T04:50:18.006Z",
     "pollCount": 1
+  },
+  {
+    "title": "Codename Nemo: The Hunt for a Nazi U-Boat and The Elusive Enigma Machine",
+    "author": "Charles Lachman",
+    "pages": 352,
+    "isbn": "9781635768718",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9781635768718.jpg",
+    "link": "https://www.goodreads.com/book/show/197063840-codename-nemo",
+    "id": "1746869227985",
+    "createdAt": "2025-05-10T09:27:07.985Z",
+    "updatedAt": "2025-05-10T09:27:07.985Z",
+    "pollCount": 0
   }
 ]
