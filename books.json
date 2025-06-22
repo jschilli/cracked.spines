@@ -331,10 +331,10 @@
     "pages": 656,
     "status": "Candidate",
     "createdAt": "2024-06-07T16:34:55.059Z",
-    "updatedAt": "2025-05-20T23:48:45.072Z",
+    "updatedAt": "2025-06-22T11:04:28.250Z",
     "coverImage": "images/0679602836.jpg",
     "link": "https://www.goodreads.com/book/show/16286.The_Magus",
-    "pollCount": 13
+    "pollCount": 14
   },
   {
     "id": "27",
@@ -408,10 +408,10 @@
     "isbn": "9780553213973",
     "goodreadsId": "32829",
     "pages": 240,
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2025-06-19",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-03-22T13:28:56.614Z",
+    "updatedAt": "2025-06-22T11:05:28.936Z",
     "coverImage": "images/9780553213973.jpg",
     "link": "https://www.goodreads.com/book/show/32829",
     "pollCount": 6
@@ -440,10 +440,10 @@
     "pages": 1276,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-05-20T23:48:45.082Z",
+    "updatedAt": "2025-06-22T11:04:28.259Z",
     "coverImage": "images/0140449264.jpg",
     "link": "https://www.goodreads.com/book/show/7126",
-    "pollCount": 8
+    "pollCount": 9
   },
   {
     "id": "35",
@@ -498,10 +498,10 @@
     "pages": 416,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-05-20T23:48:45.091Z",
+    "updatedAt": "2025-06-22T11:04:28.264Z",
     "coverImage": "images/9780767913737.jpg",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 8
+    "pollCount": 9
   },
   {
     "id": "39",
@@ -524,10 +524,10 @@
     "pages": 894,
     "status": "Candidate",
     "createdAt": "2024-12-13T09:16:59.089Z",
-    "updatedAt": "2025-05-20T23:48:45.101Z",
+    "updatedAt": "2025-06-22T11:04:28.270Z",
     "coverImage": "images/9780060827885.jpg",
     "link": "https://www.goodreads.com/book/show/42696",
-    "pollCount": 7
+    "pollCount": 8
   },
   {
     "title": "The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook",
@@ -540,8 +540,8 @@
     "link": "https://www.goodreads.com/book/show/191746386-the-wide-wide-sea",
     "id": "1735762114376",
     "createdAt": "2025-01-01T20:08:34.376Z",
-    "updatedAt": "2025-05-20T23:48:45.110Z",
-    "pollCount": 5
+    "updatedAt": "2025-06-22T11:04:28.275Z",
+    "pollCount": 6
   },
   {
     "title": "The Infernal Machine: A True Story of Dynamite, Terror, and the Rise of the Modern Detective",
@@ -554,22 +554,22 @@
     "link": "https://www.goodreads.com/book/show/195430698",
     "id": "1737228877431",
     "createdAt": "2025-01-18T19:34:37.431Z",
-    "updatedAt": "2025-05-20T23:48:45.118Z",
-    "pollCount": 4
+    "updatedAt": "2025-06-22T11:04:28.280Z",
+    "pollCount": 5
   },
   {
     "title": "The Mysterious Case of Rudolf Diesel: Genius, Power, and Deception on the Eve of World War I",
     "author": "Douglas Brunt",
     "pages": 378,
     "isbn": "9781982169909",
-    "status": "Candidate",
-    "selectedForDate": null,
+    "status": "Selected",
+    "selectedForDate": "2025-09-18",
     "coverImage": "images/9781982169909.jpg",
     "link": "https://www.goodreads.com/book/show/101160707",
     "id": "1737228896518",
     "createdAt": "2025-01-18T19:34:56.518Z",
-    "updatedAt": "2025-05-20T23:48:45.131Z",
-    "pollCount": 4
+    "updatedAt": "2025-06-22T11:05:17.031Z",
+    "pollCount": 5
   },
   {
     "title": "The Spy and the Traitor: The Greatest Espionage Story of the Cold War",
@@ -596,8 +596,8 @@
     "link": "https://www.goodreads.com/book/show/4473.A_Prayer_for_Owen_Meany?ac=1&from_search=true&qid=JwzcEzWfle&rank=1",
     "id": "1741994480887",
     "createdAt": "2025-03-14T23:21:20.887Z",
-    "updatedAt": "2025-05-20T23:48:45.145Z",
-    "pollCount": 3
+    "updatedAt": "2025-06-22T11:04:28.293Z",
+    "pollCount": 4
   },
   {
     "title": "Red Notice: A True Story of High Finance, Murder, and One Man's Fight for Justice",
@@ -610,8 +610,8 @@
     "link": "https://www.goodreads.com/book/show/22609522-red-notice?ac=1&from_search=true&qid=pU6b7UGN91&rank=1",
     "id": "1741994500385",
     "createdAt": "2025-03-14T23:21:40.385Z",
-    "updatedAt": "2025-05-20T23:48:45.158Z",
-    "pollCount": 3
+    "updatedAt": "2025-06-22T11:04:28.296Z",
+    "pollCount": 4
   },
   {
     "title": "James",
