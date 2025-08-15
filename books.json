@@ -760,7 +760,7 @@
     "isbn": "9780440180296",
     "status": "Selected",
     "selectedForDate": "2025-10-16",
-    "coverImage": "images/undefined.jpg",
+    "coverImage": "images/9780440180296.jpg",
     "link": "https://www.goodreads.com/book/show/4981.Slaughterhouse_Five?ref=nav_sb_ss_1_3",
     "id": "1752278718564",
     "createdAt": "2025-07-12T00:05:18.564Z",
@@ -780,5 +780,47 @@
     "createdAt": "2025-07-12T00:05:41.728Z",
     "updatedAt": "2025-08-02T10:07:02.143Z",
     "pollCount": 1
+  },
+  {
+    "title": "Bel Canto",
+    "author": "Ann Patchett",
+    "pages": 318,
+    "isbn": "9780061738883",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9780061738883.jpg",
+    "link": "https://www.goodreads.com/book/show/5826.Bel_Canto",
+    "id": "1755298271846",
+    "createdAt": "2025-08-15T22:51:11.846Z",
+    "updatedAt": "2025-08-15T22:51:11.846Z",
+    "pollCount": 0
+  },
+  {
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "pages": 592,
+    "isbn": "0375842209",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/undefined.jpg",
+    "link": "https://www.goodreads.com/book/show/19063.The_Book_Thief",
+    "id": "1755298330708",
+    "createdAt": "2025-08-15T22:52:10.708Z",
+    "updatedAt": "2025-08-15T22:52:10.708Z",
+    "pollCount": 0
+  },
+  {
+    "title": "The Maniac",
+    "author": "Benjamín Labatut",
+    "pages": 368,
+    "isbn": "9780593654477",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9780593654477.jpg",
+    "link": "https://www.goodreads.com/book/show/75665931-the-maniac",
+    "id": "1755298402323",
+    "createdAt": "2025-08-15T22:53:22.323Z",
+    "updatedAt": "2025-08-15T22:53:22.323Z",
+    "pollCount": 0
   }
 ]
