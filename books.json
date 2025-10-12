@@ -835,5 +835,33 @@
     "createdAt": "2025-08-15T22:54:34.567Z",
     "updatedAt": "2025-09-21T13:29:53.767Z",
     "pollCount": 0
+  },
+  {
+    "title": "Origin",
+    "author": "Dan Brown",
+    "pages": 480,
+    "isbn": "9780385514231",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9780385514231.jpg",
+    "link": "https://www.goodreads.com/book/show/32283133-origin",
+    "id": "1760302140104",
+    "createdAt": "2025-10-12T20:49:00.104Z",
+    "updatedAt": "2025-10-12T20:49:00.104Z",
+    "pollCount": 0
+  },
+  {
+    "title": "Accelerando",
+    "author": "Charles Stross",
+    "pages": 415,
+    "isbn": "9780441014156",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9780441014156.jpg",
+    "link": "https://www.goodreads.com/book/show/17863.Accelerando",
+    "id": "1760302201889",
+    "createdAt": "2025-10-12T20:50:01.889Z",
+    "updatedAt": "2025-10-12T20:50:01.889Z",
+    "pollCount": 0
   }
 ]
