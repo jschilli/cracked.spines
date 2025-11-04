@@ -438,9 +438,9 @@
     "isbn": "0140449264",
     "goodreadsId": "7126",
     "pages": 1276,
-    "status": "Candidate",
+    "status": "Relegated",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-09-21T13:31:38.344Z",
+    "updatedAt": "2025-11-04T10:14:21.258Z",
     "coverImage": "images/0140449264.jpg",
     "link": "https://www.goodreads.com/book/show/7126",
     "pollCount": 11
@@ -498,10 +498,10 @@
     "pages": 416,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-09-21T13:31:38.352Z",
+    "updatedAt": "2025-11-04T10:15:05.910Z",
     "coverImage": "images/9780767913737.jpg",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 11
+    "pollCount": 12
   },
   {
     "id": "39",
@@ -540,8 +540,8 @@
     "link": "https://www.goodreads.com/book/show/191746386-the-wide-wide-sea",
     "id": "1735762114376",
     "createdAt": "2025-01-01T20:08:34.376Z",
-    "updatedAt": "2025-09-21T13:31:38.360Z",
-    "pollCount": 8
+    "updatedAt": "2025-11-04T10:15:05.923Z",
+    "pollCount": 9
   },
   {
     "title": "The Infernal Machine: A True Story of Dynamite, Terror, and the Rise of the Modern Detective",
@@ -604,13 +604,13 @@
     "author": "Bill Browder",
     "pages": 380,
     "isbn": "9781476755717",
-    "status": "Candidate",
-    "selectedForDate": null,
+    "status": "Selected",
+    "selectedForDate": "2025-11-20",
     "coverImage": "images/9781476755717.jpg",
     "link": "https://www.goodreads.com/book/show/22609522-red-notice?ac=1&from_search=true&qid=pU6b7UGN91&rank=1",
     "id": "1741994500385",
     "createdAt": "2025-03-14T23:21:40.385Z",
-    "updatedAt": "2025-09-21T13:31:38.366Z",
+    "updatedAt": "2025-11-04T10:14:25.337Z",
     "pollCount": 6
   },
   {
@@ -652,8 +652,8 @@
     "link": "https://www.goodreads.com/book/show/17245.Dracula?ref=rae_2",
     "id": "1752278439382",
     "createdAt": "2025-07-12T00:00:39.382Z",
-    "updatedAt": "2025-09-21T13:31:38.373Z",
-    "pollCount": 2
+    "updatedAt": "2025-11-04T10:15:05.934Z",
+    "pollCount": 3
   },
   {
     "title": "Crusade in Europe",
@@ -694,8 +694,8 @@
     "link": "https://www.goodreads.com/book/show/168668.Catch_22?ref=nav_sb_ss_1_8",
     "id": "1752278494564",
     "createdAt": "2025-07-12T00:01:34.564Z",
-    "updatedAt": "2025-09-21T13:31:38.390Z",
-    "pollCount": 2
+    "updatedAt": "2025-11-04T10:15:05.945Z",
+    "pollCount": 3
   },
   {
     "title": "Run with the Horsemen (Porter Osborne Jr, #1)",
@@ -722,8 +722,8 @@
     "link": "https://www.goodreads.com/book/show/19380.Candide?ref=nav_sb_ss_1_7",
     "id": "1752278583521",
     "createdAt": "2025-07-12T00:03:03.521Z",
-    "updatedAt": "2025-09-21T13:31:38.401Z",
-    "pollCount": 2
+    "updatedAt": "2025-11-04T10:15:05.959Z",
+    "pollCount": 3
   },
   {
     "title": "The Gray Lady Winked: How the New York Times's Misreporting, Distortions and Fabrications Radically Alter History",
@@ -750,21 +750,21 @@
     "link": "https://www.goodreads.com/book/show/814919.An_Empire_of_Plants?ref=nav_sb_ss_1_19",
     "id": "1752278611342",
     "createdAt": "2025-07-12T00:03:31.342Z",
-    "updatedAt": "2025-09-21T13:31:38.423Z",
-    "pollCount": 2
+    "updatedAt": "2025-11-04T10:15:05.970Z",
+    "pollCount": 3
   },
   {
     "title": "Slaughterhouse-Five",
     "author": "Kurt Vonnegut Jr.",
     "pages": 275,
     "isbn": "9780440180296",
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2025-10-16",
     "coverImage": "images/9780440180296.jpg",
     "link": "https://www.goodreads.com/book/show/4981.Slaughterhouse_Five?ref=nav_sb_ss_1_3",
     "id": "1752278718564",
     "createdAt": "2025-07-12T00:05:18.564Z",
-    "updatedAt": "2025-08-02T10:12:36.082Z",
+    "updatedAt": "2025-11-04T10:14:37.350Z",
     "pollCount": 1
   },
   {
@@ -778,8 +778,8 @@
     "link": "https://www.goodreads.com/book/show/890.Of_Mice_and_Men?ac=1&from_search=true&qid=H3kIughC9o&rank=1",
     "id": "1752278741728",
     "createdAt": "2025-07-12T00:05:41.728Z",
-    "updatedAt": "2025-09-21T13:31:38.432Z",
-    "pollCount": 2
+    "updatedAt": "2025-11-04T10:15:05.980Z",
+    "pollCount": 3
   },
   {
     "title": "Bel Canto",
@@ -806,8 +806,8 @@
     "link": "https://www.goodreads.com/book/show/19063.The_Book_Thief",
     "id": "1755298330708",
     "createdAt": "2025-08-15T22:52:10.708Z",
-    "updatedAt": "2025-09-21T13:31:38.449Z",
-    "pollCount": 1
+    "updatedAt": "2025-11-04T10:15:05.991Z",
+    "pollCount": 2
   },
   {
     "title": "The Maniac",
@@ -847,8 +847,8 @@
     "link": "https://www.goodreads.com/book/show/32283133-origin",
     "id": "1760302140104",
     "createdAt": "2025-10-12T20:49:00.104Z",
-    "updatedAt": "2025-10-12T20:49:00.104Z",
-    "pollCount": 0
+    "updatedAt": "2025-11-04T10:15:06.000Z",
+    "pollCount": 1
   },
   {
     "title": "Accelerando",
@@ -861,7 +861,7 @@
     "link": "https://www.goodreads.com/book/show/17863.Accelerando",
     "id": "1760302201889",
     "createdAt": "2025-10-12T20:50:01.889Z",
-    "updatedAt": "2025-10-12T20:50:01.889Z",
-    "pollCount": 0
+    "updatedAt": "2025-11-04T10:15:06.008Z",
+    "pollCount": 1
   }
 ]
