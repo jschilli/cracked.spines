@@ -498,10 +498,10 @@
     "pages": 416,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-11-27T05:28:11.578Z",
+    "updatedAt": "2025-12-14T02:57:36.442Z",
     "coverImage": "images/9780767913737.jpg",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 12
+    "pollCount": 13
   },
   {
     "id": "39",
@@ -540,8 +540,8 @@
     "link": "https://www.goodreads.com/book/show/191746386-the-wide-wide-sea",
     "id": "1735762114376",
     "createdAt": "2025-01-01T20:08:34.376Z",
-    "updatedAt": "2025-11-04T10:15:05.923Z",
-    "pollCount": 9
+    "updatedAt": "2025-12-14T02:57:36.459Z",
+    "pollCount": 10
   },
   {
     "title": "The Infernal Machine: A True Story of Dynamite, Terror, and the Rise of the Modern Detective",
@@ -694,8 +694,8 @@
     "link": "https://www.goodreads.com/book/show/168668.Catch_22?ref=nav_sb_ss_1_8",
     "id": "1752278494564",
     "createdAt": "2025-07-12T00:01:34.564Z",
-    "updatedAt": "2025-11-04T10:15:05.945Z",
-    "pollCount": 3
+    "updatedAt": "2025-12-14T02:57:36.473Z",
+    "pollCount": 4
   },
   {
     "title": "Run with the Horsemen (Porter Osborne Jr, #1)",
@@ -750,8 +750,8 @@
     "link": "https://www.goodreads.com/book/show/814919.An_Empire_of_Plants?ref=nav_sb_ss_1_19",
     "id": "1752278611342",
     "createdAt": "2025-07-12T00:03:31.342Z",
-    "updatedAt": "2025-11-04T10:15:05.970Z",
-    "pollCount": 3
+    "updatedAt": "2025-12-14T02:57:36.482Z",
+    "pollCount": 4
   },
   {
     "title": "Slaughterhouse-Five",
@@ -806,8 +806,8 @@
     "link": "https://www.goodreads.com/book/show/19063.The_Book_Thief",
     "id": "1755298330708",
     "createdAt": "2025-08-15T22:52:10.708Z",
-    "updatedAt": "2025-11-04T10:15:05.991Z",
-    "pollCount": 2
+    "updatedAt": "2025-12-14T02:57:36.496Z",
+    "pollCount": 3
   },
   {
     "title": "The Maniac",
@@ -847,8 +847,8 @@
     "link": "https://www.goodreads.com/book/show/32283133-origin",
     "id": "1760302140104",
     "createdAt": "2025-10-12T20:49:00.104Z",
-    "updatedAt": "2025-11-04T10:15:06.000Z",
-    "pollCount": 1
+    "updatedAt": "2025-12-14T02:57:36.505Z",
+    "pollCount": 2
   },
   {
     "title": "Accelerando",
@@ -875,8 +875,8 @@
     "link": "https://www.goodreads.com/book/show/214152261-flesh?from_search=true&from_srp=true&qid=T6OgvNtl6S&rank=1",
     "id": "1763079120329",
     "createdAt": "2025-11-14T00:12:00.329Z",
-    "updatedAt": "2025-11-14T00:12:00.329Z",
-    "pollCount": 0
+    "updatedAt": "2025-12-14T02:57:36.518Z",
+    "pollCount": 1
   },
   {
     "title": "Theo of Golden: A Novel",
@@ -889,8 +889,8 @@
     "link": "https://www.goodreads.com/book/show/242376245",
     "id": "1763079177854",
     "createdAt": "2025-11-14T00:12:57.854Z",
-    "updatedAt": "2025-11-14T00:12:57.854Z",
-    "pollCount": 0
+    "updatedAt": "2025-12-14T02:57:36.527Z",
+    "pollCount": 1
   },
   {
     "title": "Blind Man's Bluff: The Untold Story of American Submarine Espionage",
@@ -917,8 +917,8 @@
     "link": "https://www.goodreads.com/book/show/35820369-the-rise-and-fall-of-the-dinosaurs",
     "id": "1763079211823",
     "createdAt": "2025-11-14T00:13:31.823Z",
-    "updatedAt": "2025-11-14T00:13:31.823Z",
-    "pollCount": 0
+    "updatedAt": "2025-12-14T02:57:36.537Z",
+    "pollCount": 1
   },
   {
     "title": "The Order of Time",
@@ -931,8 +931,8 @@
     "link": "https://www.goodreads.com/book/show/36442813-the-order-of-time",
     "id": "1763079226658",
     "createdAt": "2025-11-14T00:13:46.658Z",
-    "updatedAt": "2025-11-14T00:13:46.658Z",
-    "pollCount": 0
+    "updatedAt": "2025-12-14T02:57:36.547Z",
+    "pollCount": 1
   },
   {
     "title": "Destiny of the Republic: A Tale of Madness, Medicine and the Murder of a President",
@@ -959,7 +959,7 @@
     "link": "https://www.goodreads.com/book/show/8171378",
     "id": "1764221401605",
     "createdAt": "2025-11-27T05:30:01.605Z",
-    "updatedAt": "2025-11-27T05:30:01.605Z",
-    "pollCount": 0
+    "updatedAt": "2025-12-14T02:57:36.559Z",
+    "pollCount": 1
   }
 ]
