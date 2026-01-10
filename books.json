@@ -961,5 +961,33 @@
     "createdAt": "2025-11-27T05:30:01.605Z",
     "updatedAt": "2025-12-14T02:57:36.559Z",
     "pollCount": 1
+  },
+  {
+    "title": "Against the Grain: A Deep History of the Earliest States",
+    "author": "James C. Scott",
+    "pages": 312,
+    "isbn": "9780300182910",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9780300182910.jpg",
+    "link": "https://www.goodreads.com/book/show/34324534-against-the-grain",
+    "id": "1767661059053",
+    "createdAt": "2026-01-06T00:57:39.053Z",
+    "updatedAt": "2026-01-06T00:57:39.053Z",
+    "pollCount": 0
+  },
+  {
+    "title": "The Mission: The CIA in the 21st Century",
+    "author": "Tim Weiner",
+    "pages": 464,
+    "isbn": "9780063270183",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "coverImage": "images/9780063270183.jpg",
+    "link": "https://www.goodreads.com/book/show/221972207-the-mission",
+    "id": "1768068850900",
+    "createdAt": "2026-01-10T18:14:10.900Z",
+    "updatedAt": "2026-01-10T18:14:10.900Z",
+    "pollCount": 0
   }
 ]
