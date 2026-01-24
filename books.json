@@ -498,10 +498,10 @@
     "pages": 416,
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2025-12-14T02:57:36.442Z",
+    "updatedAt": "2026-01-24T03:39:51.359Z",
     "coverImage": "images/9780767913737.jpg",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 13
+    "pollCount": 14
   },
   {
     "id": "39",
@@ -540,8 +540,8 @@
     "link": "https://www.goodreads.com/book/show/191746386-the-wide-wide-sea",
     "id": "1735762114376",
     "createdAt": "2025-01-01T20:08:34.376Z",
-    "updatedAt": "2025-12-14T02:57:36.459Z",
-    "pollCount": 10
+    "updatedAt": "2026-01-24T03:39:51.365Z",
+    "pollCount": 11
   },
   {
     "title": "The Infernal Machine: A True Story of Dynamite, Terror, and the Rise of the Modern Detective",
@@ -604,13 +604,13 @@
     "author": "Bill Browder",
     "pages": 380,
     "isbn": "9781476755717",
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2026-01-15",
     "coverImage": "images/9781476755717.jpg",
     "link": "https://www.goodreads.com/book/show/22609522-red-notice?ac=1&from_search=true&qid=pU6b7UGN91&rank=1",
     "id": "1741994500385",
     "createdAt": "2025-03-14T23:21:40.385Z",
-    "updatedAt": "2025-11-04T10:14:25.337Z",
+    "updatedAt": "2026-01-24T03:36:41.824Z",
     "pollCount": 6
   },
   {
@@ -688,13 +688,13 @@
     "author": "Joseph Heller",
     "pages": 453,
     "isbn": "9780684833392",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "coverImage": "images/9780684833392.jpg",
     "link": "https://www.goodreads.com/book/show/168668.Catch_22?ref=nav_sb_ss_1_8",
     "id": "1752278494564",
     "createdAt": "2025-07-12T00:01:34.564Z",
-    "updatedAt": "2025-12-14T02:57:36.473Z",
+    "updatedAt": "2026-01-24T03:38:57.451Z",
     "pollCount": 4
   },
   {
@@ -744,13 +744,13 @@
     "author": "Toby Musgrave",
     "pages": 192,
     "isbn": "9781844030200",
-    "status": "Candidate",
-    "selectedForDate": null,
+    "status": "Selected",
+    "selectedForDate": "2026-04-16",
     "coverImage": "images/9781844030200.jpg",
     "link": "https://www.goodreads.com/book/show/814919.An_Empire_of_Plants?ref=nav_sb_ss_1_19",
     "id": "1752278611342",
     "createdAt": "2025-07-12T00:03:31.342Z",
-    "updatedAt": "2025-12-14T02:57:36.482Z",
+    "updatedAt": "2026-01-24T03:36:41.827Z",
     "pollCount": 4
   },
   {
@@ -806,8 +806,8 @@
     "link": "https://www.goodreads.com/book/show/19063.The_Book_Thief",
     "id": "1755298330708",
     "createdAt": "2025-08-15T22:52:10.708Z",
-    "updatedAt": "2025-12-14T02:57:36.496Z",
-    "pollCount": 3
+    "updatedAt": "2026-01-24T03:39:51.368Z",
+    "pollCount": 4
   },
   {
     "title": "The Maniac",
@@ -847,8 +847,8 @@
     "link": "https://www.goodreads.com/book/show/32283133-origin",
     "id": "1760302140104",
     "createdAt": "2025-10-12T20:49:00.104Z",
-    "updatedAt": "2025-12-14T02:57:36.505Z",
-    "pollCount": 2
+    "updatedAt": "2026-01-24T03:39:51.371Z",
+    "pollCount": 3
   },
   {
     "title": "Accelerando",
@@ -869,13 +869,13 @@
     "author": "David Szalay",
     "pages": 368,
     "isbn": "9781982122799",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "coverImage": "images/9781982122799.jpg",
     "link": "https://www.goodreads.com/book/show/214152261-flesh?from_search=true&from_srp=true&qid=T6OgvNtl6S&rank=1",
     "id": "1763079120329",
     "createdAt": "2025-11-14T00:12:00.329Z",
-    "updatedAt": "2025-12-14T02:57:36.518Z",
+    "updatedAt": "2026-01-24T03:39:02.794Z",
     "pollCount": 1
   },
   {
@@ -889,8 +889,8 @@
     "link": "https://www.goodreads.com/book/show/242376245",
     "id": "1763079177854",
     "createdAt": "2025-11-14T00:12:57.854Z",
-    "updatedAt": "2025-12-14T02:57:36.527Z",
-    "pollCount": 1
+    "updatedAt": "2026-01-24T03:39:51.374Z",
+    "pollCount": 2
   },
   {
     "title": "Blind Man's Bluff: The Untold Story of American Submarine Espionage",
@@ -931,8 +931,8 @@
     "link": "https://www.goodreads.com/book/show/36442813-the-order-of-time",
     "id": "1763079226658",
     "createdAt": "2025-11-14T00:13:46.658Z",
-    "updatedAt": "2025-12-14T02:57:36.547Z",
-    "pollCount": 1
+    "updatedAt": "2026-01-24T03:39:51.377Z",
+    "pollCount": 2
   },
   {
     "title": "Destiny of the Republic: A Tale of Madness, Medicine and the Murder of a President",
@@ -959,8 +959,8 @@
     "link": "https://www.goodreads.com/book/show/8171378",
     "id": "1764221401605",
     "createdAt": "2025-11-27T05:30:01.605Z",
-    "updatedAt": "2025-12-14T02:57:36.559Z",
-    "pollCount": 1
+    "updatedAt": "2026-01-24T03:39:51.379Z",
+    "pollCount": 2
   },
   {
     "title": "Against the Grain: A Deep History of the Earliest States",
@@ -973,8 +973,8 @@
     "link": "https://www.goodreads.com/book/show/34324534-against-the-grain",
     "id": "1767661059053",
     "createdAt": "2026-01-06T00:57:39.053Z",
-    "updatedAt": "2026-01-06T00:57:39.053Z",
-    "pollCount": 0
+    "updatedAt": "2026-01-24T03:39:51.381Z",
+    "pollCount": 1
   },
   {
     "title": "The Mission: The CIA in the 21st Century",
@@ -987,7 +987,7 @@
     "link": "https://www.goodreads.com/book/show/221972207-the-mission",
     "id": "1768068850900",
     "createdAt": "2026-01-10T18:14:10.900Z",
-    "updatedAt": "2026-01-10T18:14:10.900Z",
-    "pollCount": 0
+    "updatedAt": "2026-01-24T03:39:51.384Z",
+    "pollCount": 1
   }
 ]
