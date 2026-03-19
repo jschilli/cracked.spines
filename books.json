@@ -496,12 +496,12 @@
     "isbn": "9780767913737",
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2026-02-19T21:55:55.596Z",
+    "updatedAt": "2026-03-19T20:33:35.112Z",
     "coverImage": "images/9780767913737.jpg",
     "pages": 416,
     "goodreadsId": "78508",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 15
+    "pollCount": 16
   },
   {
     "id": "39",
@@ -803,11 +803,11 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2025-08-15T22:52:10.708Z",
-    "updatedAt": "2026-02-19T21:55:55.596Z",
+    "updatedAt": "2026-03-19T20:33:35.112Z",
     "coverImage": "images/undefined.jpg",
     "pages": 592,
     "link": "https://www.goodreads.com/book/show/19063.The_Book_Thief",
-    "pollCount": 5
+    "pollCount": 6
   },
   {
     "id": "1755298402323",
@@ -841,10 +841,10 @@
     "title": "Origin",
     "author": "Dan Brown",
     "isbn": "9780385514231",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2025-10-12T20:49:00.104Z",
-    "updatedAt": "2026-02-19T21:55:55.596Z",
+    "updatedAt": "2026-03-19T20:32:41.938Z",
     "coverImage": "images/9780385514231.jpg",
     "pages": 480,
     "link": "https://www.goodreads.com/book/show/32283133-origin",
@@ -886,11 +886,11 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2025-11-14T00:12:57.854Z",
-    "updatedAt": "2026-02-19T21:55:55.596Z",
+    "updatedAt": "2026-03-19T20:33:35.112Z",
     "coverImage": "images/9781668236512.jpg",
     "pages": 400,
     "link": "https://www.goodreads.com/book/show/242376245",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "1763079196233",
@@ -911,10 +911,10 @@
     "title": "The Rise and Fall of the Dinosaurs: A New History of a Lost World",
     "author": "Steve Brusatte",
     "isbn": "9780062490421",
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2026-03-19",
     "createdAt": "2025-11-14T00:13:31.823Z",
-    "updatedAt": "2025-12-22T03:46:06.641Z",
+    "updatedAt": "2026-03-19T20:32:41.938Z",
     "coverImage": "images/9780062490421.jpg",
     "pages": 404,
     "link": "https://www.goodreads.com/book/show/35820369-the-rise-and-fall-of-the-dinosaurs",
@@ -928,11 +928,11 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2025-11-14T00:13:46.658Z",
-    "updatedAt": "2026-02-19T21:55:55.596Z",
+    "updatedAt": "2026-03-19T20:33:35.112Z",
     "coverImage": "images/9780735216105.jpg",
     "pages": 224,
     "link": "https://www.goodreads.com/book/show/36442813-the-order-of-time",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "1763079247972",
@@ -953,10 +953,10 @@
     "title": "The Warmth of Other Suns: The Epic Story of America's Great Migration",
     "author": "Isabel Wilkerson",
     "isbn": "9780679444329",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2025-11-27T05:30:01.605Z",
-    "updatedAt": "2026-02-19T21:55:55.596Z",
+    "updatedAt": "2026-03-19T20:32:41.938Z",
     "coverImage": "images/9780679444329.jpg",
     "pages": 640,
     "link": "https://www.goodreads.com/book/show/8171378",
@@ -970,11 +970,11 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-01-06T00:57:39.053Z",
-    "updatedAt": "2026-02-19T21:55:55.596Z",
+    "updatedAt": "2026-03-19T20:33:35.112Z",
     "coverImage": "images/9780300182910.jpg",
     "pages": 312,
     "link": "https://www.goodreads.com/book/show/34324534-against-the-grain",
-    "pollCount": 2
+    "pollCount": 3
   },
   {
     "id": "1768068850900",
@@ -984,11 +984,11 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-01-10T18:14:10.900Z",
-    "updatedAt": "2026-02-19T21:55:55.596Z",
+    "updatedAt": "2026-03-19T20:33:35.112Z",
     "coverImage": "images/9780063270183.jpg",
     "pages": 464,
     "link": "https://www.goodreads.com/book/show/221972207-the-mission",
-    "pollCount": 2
+    "pollCount": 3
   },
   {
     "id": "1773442993232",
@@ -998,12 +998,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-03-13T23:03:13.232Z",
-    "updatedAt": "2026-03-13T23:03:13.232Z",
+    "updatedAt": "2026-03-19T20:33:35.112Z",
     "coverImage": "images/9780226837970.jpg",
     "pages": 768,
     "goodreadsId": "215968557",
     "link": "https://www.goodreads.com/book/show/215968557-inventing-the-renaissance",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1773442994630",
@@ -1012,21 +1012,21 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-03-13T23:03:14.630Z",
-    "updatedAt": "2026-03-13T23:03:14.630Z",
+    "updatedAt": "2026-03-19T20:33:35.112Z",
     "coverImage": "images/23692271.jpg",
     "pages": 512,
     "goodreadsId": "23692271",
     "link": "https://www.goodreads.com/book/show/23692271-sapiens?from_search=true&from_srp=true&qid=IvXtnNQC17&rank=1",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1773442995919",
     "title": "The Gunslinger (The Dark Tower, #1)",
     "author": "Stephen  King",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2026-03-13T23:03:15.918Z",
-    "updatedAt": "2026-03-13T23:03:15.918Z",
+    "updatedAt": "2026-03-19T20:32:41.938Z",
     "coverImage": "images/28253070.jpg",
     "pages": 385,
     "goodreadsId": "28253070",
@@ -1041,25 +1041,25 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-03-13T23:03:17.188Z",
-    "updatedAt": "2026-03-13T23:03:17.188Z",
+    "updatedAt": "2026-03-19T20:33:35.112Z",
     "coverImage": "images/9781328879943.jpg",
     "pages": 320,
     "goodreadsId": "34454589",
     "link": "https://www.goodreads.com/book/show/34454589-the-handmaid-s-tale?ref=nav_sb_ss_1_8",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1773442998514",
     "title": "Genghis Khan and the Making of the Modern World",
     "author": "Jack Weatherford",
-    "status": "Candidate",
-    "selectedForDate": null,
+    "status": "Selected",
+    "selectedForDate": "2026-06-18",
     "createdAt": "2026-03-13T23:03:18.514Z",
-    "updatedAt": "2026-03-13T23:03:18.514Z",
+    "updatedAt": "2026-03-19T20:32:41.938Z",
     "coverImage": "images/40718726.jpg",
-    "link": "https://www.goodreads.com/book/show/40718726-genghis-khan-and-the-making-of-the-modern-world",
-    "pollCount": 0,
     "pages": 352,
-    "goodreadsId": "40718726"
+    "goodreadsId": "40718726",
+    "link": "https://www.goodreads.com/book/show/40718726-genghis-khan-and-the-making-of-the-modern-world",
+    "pollCount": 0
   }
 ]
