@@ -15,9 +15,11 @@ For each Goodreads URL:
    npx tsx scripts/scrape-goodreads.ts "<url>" public/images
    ```
 
-2. Check the result. If `success: false`, report the error and skip this URL.
+2. Check the result. Goodreads occasionally returns 503 Service Unavailable — retry once or twice with a brief pause before reporting failure. If `success: false` after retries, report the error and skip this URL.
 
 3. If `success: true`, review warnings (missing ISBN, multiple authors, etc.) and report them to the user.
+
+   **Missing ISBN:** If the scraper returns `isbn: null`, the book will add successfully but `diff-report`'s `hasAllFields` will flag it (every other book in the collection has an ISBN). Before committing a book with no ISBN, try a different Goodreads edition URL for the same title — many titles have multiple editions on Goodreads and the hardcover/reprint editions usually expose an ISBN where the default does not. Ask the user for a known-good ISBN if no edition works.
 
 4. Pipe the `data` field (ScrapeData) to add-book:
    ```

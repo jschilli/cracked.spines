@@ -7,7 +7,7 @@ description: Orchestrates Cracked Spines book club administration workflows. Use
 
 Guides Claude through the three recurring book club admin workflows: poll preparation, post-meeting selection recording, and adding new candidate books. Each workflow calls scripts in `scripts/` that operate on `books.json` and `public/images/`, then validates changes before committing.
 
-All scripts output structured JSON conforming to `ScriptResult` (see `admin-acts.md` for full spec). Scripts are run via `npx tsx scripts/<name>.ts`.
+All scripts output structured JSON: `{ success: boolean, data: ..., error: "...", warnings: [...] }`. Scripts are run via `npx tsx scripts/<name>.ts`. Email templates for poll announcements and after-meeting notes live in `sample-emails.md` at the repo root — treat these as canonical examples to mimic when generating emails in Acts 1 and 2.
 
 </objective>
 
@@ -55,9 +55,9 @@ Always show the user a summary of changes before committing and pushing. Include
 
 **Which workflow do you need?**
 
-1. Prepare poll (Act 1) - create monthly poll, increment counts, optionally add new books
-2. Record selection (Act 2) - process poll results after a meeting
-3. Add book (Act 3) - add new candidate books from Goodreads URLs
+1. Prepare poll (Act 1) - list candidates for a monthly poll, optionally add new books, generate the poll announcement email. **Does NOT increment poll counts** — that happens in Act 2 so the site reflects the live count while the poll is open.
+2. Record selection (Act 2) - after a meeting, increment poll counts, mark the previous book Read, select the winner, relegate ranks 11+, generate the after-meeting email
+3. Add book (Act 3) - add new candidate books from Goodreads URLs, standalone (not part of a poll)
 
 </intake>
 
@@ -91,10 +91,12 @@ Always show the user a summary of changes before committing and pushing. Include
 
 | Act | Message |
 |-----|---------|
-| Act 1 (with new candidates) | `<Month> poll + new candidates` |
-| Act 1 (poll counts only) | `Polled for <Month> Survey` |
+| Act 1 (poll prep with new candidates) | `<Month> poll + new candidates` |
+| Act 1 (poll prep, no new candidates) | no commit needed — nothing changed on disk |
 | Act 2 | `<Month Year> selection, relegates` |
-| Act 3 | `Adding candidates` |
+| Act 3 (standalone book adds) | `Adding candidates` |
+
+Legacy commits like `Polled for <Month> Survey` exist in git history from an earlier workflow where poll counts were incremented at poll-creation time. Do not reproduce that pattern — the current workflow increments counts in Act 2 (see `workflows/record-selection.md` Step 1 for the reasoning).
 
 </quick_reference>
 

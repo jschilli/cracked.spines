@@ -92,13 +92,14 @@ Calculate derived dates:
 - Next poll date: 2nd Friday of next month
 - Candidate deadline: 2nd Thursday of next month
 
-Generate the email using the template from `admin-acts.md` (After-meeting email template section). Fill in:
-- `previous_book_title`: the book marked as Read
-- `discussion_commentary`: from user input
-- `month_year`: current month/year for the poll
-- `book_blurb`: from Goodreads or user
-- Derived dates above
-- Location info (default CLJ clubhouse or override)
+The canonical after-meeting email pattern lives in `sample-emails.md` at the repo root under "## After meeting". Read that file and mimic the voice, structure, pacing, and sign-off exactly. Jeff's after-meeting emails have a distinctive rhythm: a short reflection on the discussion (often playful), then the reveal of the winning book with a book blurb, then logistical reminders about the next meeting, then a request for new candidate submissions with a deadline, then `-Jeff`.
+
+Fill in:
+- **Previous book reflection**: 1-2 sentences about the discussion, using the user's commentary
+- **Winning book reveal**: the new selection with a blurb (fetch from the book's Goodreads `link` or ask the user)
+- **Next meeting logistics**: next meeting date (3rd Thursday of next month), venue (default CLJ clubhouse or override)
+- **Candidate deadline**: 2nd Thursday of next month
+- **Sign-off**: `-Jeff`
 
 Present the email for the user to copy.
 
