@@ -496,12 +496,12 @@
     "isbn": "9780767913737",
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:22.114Z",
     "coverImage": "images/9780767913737.jpg",
     "pages": 416,
     "goodreadsId": "78508",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 16
+    "pollCount": 17
   },
   {
     "id": "39",
@@ -744,10 +744,10 @@
     "title": "An Empire of Plants: People and Plants That Changed the World",
     "author": "Toby Musgrave",
     "isbn": "9781844030200",
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2026-04-16",
     "createdAt": "2025-07-12T00:03:31.342Z",
-    "updatedAt": "2026-01-24T03:36:41.827Z",
+    "updatedAt": "2026-04-17T03:05:29.851Z",
     "coverImage": "images/9781844030200.jpg",
     "pages": 192,
     "link": "https://www.goodreads.com/book/show/814919.An_Empire_of_Plants?ref=nav_sb_ss_1_19",
@@ -800,14 +800,14 @@
     "title": "The Book Thief",
     "author": "Markus Zusak",
     "isbn": "0375842209",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2025-08-15T22:52:10.708Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:29.851Z",
     "coverImage": "images/undefined.jpg",
     "pages": 592,
     "link": "https://www.goodreads.com/book/show/19063.The_Book_Thief",
-    "pollCount": 6
+    "pollCount": 7
   },
   {
     "id": "1755298402323",
@@ -883,14 +883,14 @@
     "title": "Theo of Golden: A Novel",
     "author": "Allen  Levi",
     "isbn": "9781668236512",
-    "status": "Candidate",
-    "selectedForDate": null,
+    "status": "Selected",
+    "selectedForDate": "2026-07-16",
     "createdAt": "2025-11-14T00:12:57.854Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:29.851Z",
     "coverImage": "images/9781668236512.jpg",
     "pages": 400,
     "link": "https://www.goodreads.com/book/show/242376245",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "1763079196233",
@@ -928,11 +928,11 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2025-11-14T00:13:46.658Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:22.114Z",
     "coverImage": "images/9780735216105.jpg",
     "pages": 224,
     "link": "https://www.goodreads.com/book/show/36442813-the-order-of-time",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "1763079247972",
@@ -970,11 +970,11 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-01-06T00:57:39.053Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:22.114Z",
     "coverImage": "images/9780300182910.jpg",
     "pages": 312,
     "link": "https://www.goodreads.com/book/show/34324534-against-the-grain",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "1768068850900",
@@ -984,11 +984,11 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-01-10T18:14:10.900Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:22.114Z",
     "coverImage": "images/9780063270183.jpg",
     "pages": 464,
     "link": "https://www.goodreads.com/book/show/221972207-the-mission",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "1773442993232",
@@ -998,12 +998,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-03-13T23:03:13.232Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:22.114Z",
     "coverImage": "images/9780226837970.jpg",
     "pages": 768,
     "goodreadsId": "215968557",
     "link": "https://www.goodreads.com/book/show/215968557-inventing-the-renaissance",
-    "pollCount": 1
+    "pollCount": 2
   },
   {
     "id": "1773442994630",
@@ -1012,12 +1012,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-03-13T23:03:14.630Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:22.114Z",
     "coverImage": "images/23692271.jpg",
     "pages": 512,
     "goodreadsId": "23692271",
     "link": "https://www.goodreads.com/book/show/23692271-sapiens?from_search=true&from_srp=true&qid=IvXtnNQC17&rank=1",
-    "pollCount": 1
+    "pollCount": 2
   },
   {
     "id": "1773442995919",
@@ -1038,15 +1038,15 @@
     "title": "The Handmaid's Tale",
     "author": "Margaret Atwood",
     "isbn": "9781328879943",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2026-03-13T23:03:17.188Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:29.851Z",
     "coverImage": "images/9781328879943.jpg",
     "pages": 320,
     "goodreadsId": "34454589",
     "link": "https://www.goodreads.com/book/show/34454589-the-handmaid-s-tale?ref=nav_sb_ss_1_8",
-    "pollCount": 1
+    "pollCount": 2
   },
   {
     "id": "1773442998514",
@@ -1070,42 +1070,42 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:22:52.377Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:22.114Z",
     "coverImage": "images/9780385521314.jpg",
     "pages": 441,
     "goodreadsId": "40163119",
     "link": "https://www.goodreads.com/book/show/40163119-say-nothing",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1775852576486",
     "title": "American Struggle: Democracy, Dissent, and the Pursuit of a More Perfect Union: An Anthology",
     "author": "Jon Meacham",
     "isbn": "9780593597552",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:22:56.486Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:29.851Z",
     "coverImage": "images/9780593597552.jpg",
     "pages": 544,
     "goodreadsId": "234352805",
     "link": "https://www.goodreads.com/book/show/234352805-american-struggle",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1775852587741",
     "title": "The Wright Brothers",
     "author": "David McCullough",
     "isbn": "9781476728742",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:07.741Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:29.851Z",
     "coverImage": "images/9781476728742.jpg",
     "pages": 320,
     "goodreadsId": "54745280",
     "link": "https://www.goodreads.com/book/show/54745280-the-wright-brothers",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1775852592751",
@@ -1115,12 +1115,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:12.751Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:22.114Z",
     "coverImage": "images/9780307382467.jpg",
     "pages": 414,
     "goodreadsId": "13330922",
     "link": "https://www.goodreads.com/book/show/13330922-the-black-count",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1775852606471",
@@ -1130,11 +1130,11 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:26.471Z",
-    "updatedAt": "2026-04-10T20:33:46.707Z",
+    "updatedAt": "2026-04-17T03:05:22.114Z",
     "coverImage": "images/9781250358356.jpg",
     "pages": 400,
     "goodreadsId": "231127455",
     "link": "https://www.goodreads.com/book/show/231127455-the-laws-of-thought",
-    "pollCount": 0
+    "pollCount": 1
   }
 ]
