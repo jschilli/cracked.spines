@@ -1136,5 +1136,50 @@
     "goodreadsId": "231127455",
     "link": "https://www.goodreads.com/book/show/231127455-the-laws-of-thought",
     "pollCount": 1
+  },
+  {
+    "id": "1779070050509",
+    "title": "Easy Money: Cryptocurrency, Casino Capitalism, and the Golden Age of Fraud: The Basis for the Documentary Everyone Is Lying to You for Money",
+    "author": "Ben McKenzie",
+    "isbn": "9781419766398",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "createdAt": "2026-05-18T02:07:30.509Z",
+    "updatedAt": "2026-05-18T02:07:30.509Z",
+    "coverImage": "images/9781419766398.jpg",
+    "pages": 304,
+    "goodreadsId": "61783837",
+    "link": "https://www.goodreads.com/book/show/61783837",
+    "pollCount": 0
+  },
+  {
+    "id": "1779070053806",
+    "title": "The Gales of November: The Untold Story of the Edmund Fitzgerald",
+    "author": "John U. Bacon",
+    "isbn": "9781324094654",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "createdAt": "2026-05-18T02:07:33.805Z",
+    "updatedAt": "2026-05-18T02:07:33.805Z",
+    "coverImage": "images/9781324094654.jpg",
+    "pages": 430,
+    "goodreadsId": "226573163",
+    "link": "https://www.goodreads.com/book/show/226573163",
+    "pollCount": 0
+  },
+  {
+    "id": "1779070122392",
+    "title": "The Information: A History, a Theory, a Flood",
+    "author": "James Gleick",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "createdAt": "2026-05-18T02:08:42.391Z",
+    "updatedAt": "2026-05-18T02:08:42.391Z",
+    "coverImage": "images/9780375423727.jpg",
+    "link": "https://www.goodreads.com/book/show/8701960-the-information",
+    "pollCount": 0,
+    "isbn": "9780375423727",
+    "pages": 527,
+    "goodreadsId": "8701960"
   }
 ]
