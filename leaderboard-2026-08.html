@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>August 2026 Poll — Leaderboard · Cracked Spines</title>
+<style>
+  :root {
+    --ivory: #FAF9F5;
+    --ivory-2: #F4F1E8;
+    --slate: #141413;
+    --slate-2: #3A3A38;
+    --slate-3: #6B6B68;
+    --clay: #D97757;
+    --oat: #E3DACC;
+    --olive: #788C5D;
+    --rust: #B04A3F;
+    --rule: rgba(20, 20, 19, 0.12);
+    --rule-soft: rgba(20, 20, 19, 0.06);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--ivory);
+    color: var(--slate);
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 56px 40px 96px;
+  }
+
+  .breadcrumb {
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--slate-3);
+    margin-bottom: 32px;
+  }
+
+  .breadcrumb a {
+    color: var(--slate-3);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--slate-3);
+  }
+
+  .breadcrumb .sep {
+    margin: 0 8px;
+    color: var(--rule);
+  }
+
+  .meta {
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--slate-3);
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    font-size: 44px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    margin: 0 0 16px;
+    color: var(--slate);
+  }
+
+  .deck {
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--slate-2);
+    max-width: 640px;
+    margin: 0 0 40px;
+    font-style: italic;
+  }
+
+  .summary {
+    background: var(--ivory-2);
+    border-left: 3px solid var(--clay);
+    padding: 20px 24px;
+    margin: 0 0 48px;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .summary strong { color: var(--slate); }
+  .summary .label {
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--clay);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  h2 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin: 56px 0 20px;
+    color: var(--slate);
+  }
+
+  h2::before {
+    content: "§ ";
+    color: var(--clay);
+    font-weight: 400;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid var(--rule);
+    margin: 0 0 12px;
+    font-size: 15px;
+  }
+
+  thead th {
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--slate-3);
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--rule);
+    background: var(--ivory-2);
+  }
+
+  thead th.num { text-align: right; }
+
+  tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--rule-soft);
+    vertical-align: top;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--ivory-2); }
+
+  td.rank {
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 13px;
+    color: var(--slate-3);
+    width: 48px;
+    padding-top: 14px;
+  }
+
+  td.title {
+    font-weight: 500;
+  }
+
+  td.title .author {
+    color: var(--slate-3);
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  td.score {
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 14px;
+    text-align: right;
+    color: var(--slate-2);
+    width: 80px;
+  }
+
+  tr.winner td { background: rgba(120, 140, 93, 0.08); }
+  tr.winner td.rank { color: var(--olive); font-weight: 600; }
+  tr.winner td.title { color: var(--slate); }
+  tr.winner td.score { color: var(--olive); font-weight: 600; }
+
+  tr.relegate td { background: rgba(176, 74, 63, 0.05); }
+  tr.relegate td.rank { color: var(--rust); }
+  tr.relegate td.score { color: var(--rust); }
+
+  tr.tied td.rank { color: var(--clay); }
+
+  .pill {
+    display: inline-block;
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 2px;
+    margin-left: 8px;
+    vertical-align: 1px;
+  }
+  .pill.new { background: var(--oat); color: var(--slate-2); }
+  .pill.winner { background: var(--olive); color: var(--ivory); }
+  .pill.tied { background: var(--clay); color: var(--ivory); }
+  .pill.relegated { background: var(--rust); color: var(--ivory); }
+
+  .caption {
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: var(--slate-3);
+    margin: 8px 0 32px;
+  }
+
+  .tiebreak {
+    background: #fff;
+    border: 1px solid var(--rule);
+    padding: 24px 28px;
+    margin: 0 0 16px;
+  }
+
+  .tiebreak h3 {
+    font-family: "Iowan Old Style", Georgia, serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    color: var(--slate);
+  }
+
+  .tiebreak h3 .verdict {
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--clay);
+    margin-left: 10px;
+    font-weight: 500;
+  }
+
+  .tiebreak p {
+    font-size: 15px;
+    margin: 0 0 12px;
+    color: var(--slate-2);
+  }
+
+  .h2h-table {
+    margin-top: 16px;
+    font-size: 13px;
+  }
+  .h2h-table th, .h2h-table td {
+    padding: 8px 12px;
+    font-family: "SF Mono", Menlo, monospace;
+  }
+  .h2h-table td.win-r { color: var(--clay); font-weight: 600; }
+  .h2h-table td.win-g { color: var(--olive); font-weight: 600; }
+
+  .breakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-top: 20px;
+  }
+
+  .breaker {
+    background: #fff;
+    padding: 16px 20px;
+  }
+
+  .breaker .label {
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--slate-3);
+    margin-bottom: 6px;
+  }
+
+  .breaker .val {
+    font-family: "Iowan Old Style", Georgia, serif;
+    font-size: 15px;
+    color: var(--slate);
+  }
+
+  .breaker .val strong { color: var(--clay); }
+  .breaker.decisive { background: rgba(217, 119, 87, 0.06); }
+  .breaker.decisive .label { color: var(--clay); }
+
+  footer {
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: var(--slate-3);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  @media (max-width: 600px) {
+    .page { padding: 32px 20px 64px; }
+    h1 { font-size: 32px; }
+    .deck { font-size: 17px; }
+    table { font-size: 13px; }
+    thead th, tbody td { padding: 10px 10px; }
+    td.rank { width: 36px; padding-left: 12px; }
+    td.score { width: 56px; padding-right: 12px; }
+    .breakers { grid-template-columns: 1fr; }
+    .tiebreak { padding: 18px 18px; }
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { padding: 24px 32px; }
+    tr:hover { background: transparent !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <nav class="breadcrumb">
+    <a href="#">Cracked Spines</a>
+    <span class="sep">/</span>
+    <a href="#">Polls</a>
+    <span class="sep">/</span>
+    <span>August 2026</span>
+  </nav>
+
+  <div class="meta">Poll · 2026-05-21 · 8 ballots · Borda count</div>
+  <h1>August 2026 Poll</h1>
+  <p class="deck">Twelve candidates, eight forced-rank ballots, and a tie at second place that even Condorcet couldn't break.</p>
+
+  <div class="summary">
+    <span class="label">Outcome</span>
+    <strong>Sapiens</strong> wins the August selection with 65 Borda points — a five-point margin over the second-place pair. <strong>The River of Doubt</strong> and <strong>Against the Grain</strong> tied at 60; first-place votes (2–0) break it for <em>River</em>. <strong>The Mission</strong> and <strong>The Information</strong> drop off as the bottom-two relegates.
+  </div>
+
+  <h2>Leaderboard</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:48px">#</th>
+        <th>Title · Author</th>
+        <th class="num">Borda</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="winner">
+        <td class="rank">1</td>
+        <td class="title">Sapiens: A Brief History of Humankind <span class="pill winner">Winner</span><br><span class="author">Yuval Noah Harari</span></td>
+        <td class="score">65</td>
+      </tr>
+      <tr class="tied">
+        <td class="rank">2</td>
+        <td class="title">The River of Doubt <span class="pill tied">Tied · breaks 1st</span><br><span class="author">Candice Millard</span></td>
+        <td class="score">60</td>
+      </tr>
+      <tr class="tied">
+        <td class="rank">2</td>
+        <td class="title">Against the Grain: A Deep History of the Earliest States<br><span class="author">James C. Scott</span></td>
+        <td class="score">60</td>
+      </tr>
+      <tr>
+        <td class="rank">4</td>
+        <td class="title">Easy Money: Cryptocurrency, Casino Capitalism, and the Golden Age of Fraud <span class="pill new">New</span><br><span class="author">Ben McKenzie</span></td>
+        <td class="score">59</td>
+      </tr>
+      <tr>
+        <td class="rank">5</td>
+        <td class="title">The Order of Time<br><span class="author">Carlo Rovelli</span></td>
+        <td class="score">56</td>
+      </tr>
+      <tr>
+        <td class="rank">6</td>
+        <td class="title">Inventing the Renaissance: The Myth of a Golden Age<br><span class="author">Ada Palmer</span></td>
+        <td class="score">55</td>
+      </tr>
+      <tr>
+        <td class="rank">7</td>
+        <td class="title">Say Nothing: A True Story of Murder and Memory in Northern Ireland<br><span class="author">Patrick Radden Keefe</span></td>
+        <td class="score">54</td>
+      </tr>
+      <tr>
+        <td class="rank">8</td>
+        <td class="title">The Gales of November: The Untold Story of the Edmund Fitzgerald <span class="pill new">New</span><br><span class="author">John U. Bacon</span></td>
+        <td class="score">51</td>
+      </tr>
+      <tr>
+        <td class="rank">9</td>
+        <td class="title">The Black Count: Glory, Revolution, Betrayal, and the Real Count of Monte Cristo<br><span class="author">Tom Reiss</span></td>
+        <td class="score">47</td>
+      </tr>
+      <tr>
+        <td class="rank">10</td>
+        <td class="title">The Laws of Thought: The Quest for a Mathematical Theory of the Mind<br><span class="author">Tom Griffiths</span></td>
+        <td class="score">43</td>
+      </tr>
+      <tr class="relegate">
+        <td class="rank">11</td>
+        <td class="title">The Mission: The CIA in the 21st Century <span class="pill relegated">Relegated</span><br><span class="author">Tim Weiner</span></td>
+        <td class="score">40</td>
+      </tr>
+      <tr class="relegate">
+        <td class="rank">12</td>
+        <td class="title">The Information: A History, a Theory, a Flood <span class="pill new">New</span> <span class="pill relegated">Relegated</span><br><span class="author">James Gleick</span></td>
+        <td class="score">34</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="caption">Borda points = (13 − rank). Total 624 = 8 voters × 78 ✓</div>
+
+  <h2>Tiebreaker · 2nd place</h2>
+
+  <div class="tiebreak">
+    <h3>The River of Doubt vs. Against the Grain <span class="verdict">Both at 60 pts</span></h3>
+    <p>Per club methodology, ties resolve by Condorcet head-to-head: count how voters ranked the tied books relative to each other.</p>
+
+    <table class="h2h-table">
+      <thead>
+        <tr>
+          <th>Ballot</th>
+          <th class="num">River rank</th>
+          <th class="num">Grain rank</th>
+          <th>Winner</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>b91c</td><td>1</td><td>2</td><td class="win-r">River</td></tr>
+        <tr><td>e66b</td><td>4</td><td>7</td><td class="win-r">River</td></tr>
+        <tr><td>2adb</td><td>7</td><td>5</td><td class="win-g">Grain</td></tr>
+        <tr><td>8230</td><td>1</td><td>11</td><td class="win-r">River</td></tr>
+        <tr><td>a4af</td><td>12</td><td>2</td><td class="win-g">Grain</td></tr>
+        <tr><td>bef2</td><td>7</td><td>4</td><td class="win-g">Grain</td></tr>
+        <tr><td>add1</td><td>2</td><td>6</td><td class="win-r">River</td></tr>
+        <tr><td>5ba5</td><td>10</td><td>7</td><td class="win-g">Grain</td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:16px"><strong>Condorcet result: 4–4.</strong> Pairwise vote does not separate them. Falling through to secondary breakers:</p>
+
+    <div class="breakers">
+      <div class="breaker decisive">
+        <div class="label">First-place votes</div>
+        <div class="val"><strong>River 2</strong> · Grain 0</div>
+      </div>
+      <div class="breaker">
+        <div class="label">Mean rank</div>
+        <div class="val">River 5.5 · Grain 5.5</div>
+      </div>
+      <div class="breaker">
+        <div class="label">Median rank</div>
+        <div class="val">River 5.5 · Grain 5.5</div>
+      </div>
+    </div>
+
+    <p style="margin-top:20px"><strong>Verdict:</strong> The River of Doubt takes second on first-place votes — the only metric that distinguishes the two. Worth flagging in the next methodology revision: Condorcet alone is insufficient when ballots are this symmetric.</p>
+  </div>
+
+  <h2>Methodology</h2>
+  <p style="font-size:15px; color: var(--slate-2)">
+    Borda count with 12 candidates: 1st place = 12 points, last place = 1 point. Eight forced-rank ballots collected via survey (one ballot left The Information unranked; treated as last place per convention). Ties resolved per the club's <em>Polling Methodology</em> memo (formalized after the February 2026 tie): Condorcet head-to-head first, then first-place-votes if pairwise is tied.
+  </p>
+
+  <footer>
+    <div>Cracked Spines · August 2026 selection poll</div>
+    <div>crackedspin.es</div>
+  </footer>
+
+</div>
+</body>
+</html>
