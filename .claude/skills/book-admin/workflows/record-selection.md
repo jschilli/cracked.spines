@@ -83,25 +83,72 @@ Ask for confirmation before pushing.
 
 After push, check deployment: `gh run list --limit 1`
 
-## Step 6: Generate After-Meeting Email
+## Step 6: Generate Leaderboard + After-Meeting Email (Rich HTML)
 
-Fetch the book blurb: read the winning book's `link` (Goodreads URL) and extract a description, or ask the user to provide one.
+**Default output format:** rich HTML, not plain text. Two artifacts written to the repo root:
 
-Calculate derived dates:
-- Next meeting date: 3rd Thursday of next month
-- Next poll date: 2nd Friday of next month
-- Candidate deadline: 2nd Thursday of next month
+1. `leaderboard-<YYYY>-<MM>.html` — standalone document version (full warm editorial aesthetic).
+2. `email-<YYYY>-<MM>-results.html` — email-safe version (600px, inline styles, table layout) for paste-into-Gmail.
 
-The canonical after-meeting email pattern lives in `sample-emails.md` at the repo root under "## After meeting". Read that file and mimic the voice, structure, pacing, and sign-off exactly. Jeff's after-meeting emails have a distinctive rhythm: a short reflection on the discussion (often playful), then the reveal of the winning book with a book blurb, then logistical reminders about the next meeting, then a request for new candidate submissions with a deadline, then `-Jeff`.
+The `<MM>` is the **selection month** (the month the winning book gets read), not the current month. Example: a poll closing in May that picks the August book → `email-2026-08-results.html`.
 
-Fill in:
-- **Previous book reflection**: 1-2 sentences about the discussion, using the user's commentary
-- **Winning book reveal**: the new selection with a blurb (fetch from the book's Goodreads `link` or ask the user)
-- **Next meeting logistics**: next meeting date (3rd Thursday of next month), venue (default CLJ clubhouse or override)
-- **Candidate deadline**: 2nd Thursday of next month
-- **Sign-off**: `-Jeff`
+The canonical templates live in `sample-emails.md` under **"## After meeting (rich HTML)"** and **"## Leaderboard (rich HTML)"**. Mimic them exactly — the design tokens, structure, and section order are deliberate.
 
-Present the email for the user to copy.
+### Required sections (email)
+
+In order, top to bottom:
+1. **Meta line** — `Cracked Spines · <Month Year> Poll · N ballots` (monospace, uppercase, gray)
+2. **Headline** — terse, telegraphic. Pattern: `<Winner> takes <SelectionMonth>.` (serif, 32px)
+3. **Deck** — one italic sentence framing what's notable about this round
+4. **Intro prose** — 1–2 sentences, names winner with Borda total and margin
+5. **Outcome callout** — ivory-2 background, clay left border, one-line summary listing winner / runner-up / relegated
+6. **Leaderboard table** — all candidates, ranked, with Borda points. Winner row tinted olive. Tied ranks tinted clay on the rank number. Relegated rows tinted rust. Pills for `New`, `Winner`, `Tied`, `Relegated`
+7. **Methodology footnote** — one monospace line: `Borda points = (13 − rank). Total <X> = <voters> × <max>` ✓
+8. **Tiebreaker section** (only if there was a tie) — explain the head-to-head, show the secondary breakers in a 3-up grid, the decisive one tinted clay
+9. **Next meeting callout** — ivory-2 background, **olive** left border (signals "logistics, good-to-know"). Must include:
+   - Date (3rd Thursday of next month), time (5:30pm default), venue (CLJ clubhouse default)
+   - **Discussion book**: the currently-Selected book whose `selectedForDate` matches the next meeting date — look it up from books.json. Format: `Discussing: <Title> — <Author>`
+   - Candidate list link (`crackedspin.es/candidate`)
+   - **Do not** include an RSVP request — that is not part of the cadence
+10. **Sign-off** — `-Jeff` on its own line
+11. **Footer** — monospace rule + `Cracked Spines · crackedspin.es`
+
+### Aesthetic tokens (use exactly)
+
+| Token | Value | Use |
+|-------|-------|-----|
+| `--ivory` | `#FAF9F5` | page background |
+| `--ivory-2` | `#F4F1E8` | callout/table-header background |
+| `--slate` | `#141413` | primary text |
+| `--slate-2` | `#3A3A38` | secondary text |
+| `--slate-3` | `#6B6B68` | meta / monospace text |
+| `--clay` | `#D97757` | links, attention, ties, accent |
+| `--oat` | `#E3DACC` | `New` pill background |
+| `--olive` | `#788C5D` | winner, "good", next-meeting border |
+| `--rust` | `#B04A3F` | relegated, "bad" |
+
+Fonts: `Georgia, "Iowan Old Style", "Palatino Linotype", serif` for body/headlines; `"SF Mono", Menlo, Consolas, monospace` for meta, labels, ranks, Borda scores. No web fonts — they get stripped by email clients.
+
+### Email-safety rules (email file only)
+
+- All styles inline (no `<style>` block — Gmail strips them)
+- Layout uses `<table role="presentation">` not flexbox/grid
+- Width capped at 600px
+- No background images, no SVG
+- Test by opening the file in a browser, ⌘A / ⌘C, paste into Gmail compose — formatting should survive
+
+### Leaderboard file (`leaderboard-<YYYY>-<MM>.html`)
+
+Same content, different chrome: full-page layout (max 880px), can use a `<style>` block, breadcrumb at top, footer at bottom, hover states on table rows, print stylesheet. Use this as the "permanent record" version. The email is the disposable communication version.
+
+### Inputs to look up
+
+Before writing the email:
+- **Discussion book for next meeting**: query books.json for the Selected book whose `selectedForDate` matches the next 3rd-Thursday date. If none matches, ask the user.
+- **Ballot count**: count entries in the survey JSON
+- **Tiebreaker outcome** (if applicable): compute Condorcet head-to-head first; fall through to first-place-votes if pairwise is tied (this fallback was formalized after the August 2026 poll, where River of Doubt and Against the Grain tied at both Borda and pairwise).
+
+Present both files to the user. The leaderboard is for archival / linking. The email is for sending.
 
 </process>
 
