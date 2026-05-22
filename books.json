@@ -496,12 +496,12 @@
     "isbn": "9780767913737",
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2026-04-17T03:05:22.114Z",
+    "updatedAt": "2026-05-22T02:36:36.098Z",
     "coverImage": "images/9780767913737.jpg",
     "pages": 416,
     "goodreadsId": "78508",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 17
+    "pollCount": 18
   },
   {
     "id": "39",
@@ -534,10 +534,10 @@
     "title": "The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook",
     "author": "Hampton Sides",
     "isbn": "9780385544764",
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2026-05-21",
     "createdAt": "2025-01-01T20:08:34.376Z",
-    "updatedAt": "2026-02-20T05:47:38.896Z",
+    "updatedAt": "2026-05-22T02:36:42.573Z",
     "coverImage": "images/9780385544764.jpg",
     "pages": 408,
     "link": "https://www.goodreads.com/book/show/191746386-the-wide-wide-sea",
@@ -928,11 +928,11 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2025-11-14T00:13:46.658Z",
-    "updatedAt": "2026-04-17T03:05:22.114Z",
+    "updatedAt": "2026-05-22T02:36:36.098Z",
     "coverImage": "images/9780735216105.jpg",
     "pages": 224,
     "link": "https://www.goodreads.com/book/show/36442813-the-order-of-time",
-    "pollCount": 5
+    "pollCount": 6
   },
   {
     "id": "1763079247972",
@@ -970,25 +970,25 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-01-06T00:57:39.053Z",
-    "updatedAt": "2026-04-17T03:05:22.114Z",
+    "updatedAt": "2026-05-22T02:36:36.098Z",
     "coverImage": "images/9780300182910.jpg",
     "pages": 312,
     "link": "https://www.goodreads.com/book/show/34324534-against-the-grain",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "1768068850900",
     "title": "The Mission: The CIA in the 21st Century",
     "author": "Tim Weiner",
     "isbn": "9780063270183",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2026-01-10T18:14:10.900Z",
-    "updatedAt": "2026-04-17T03:05:22.114Z",
+    "updatedAt": "2026-05-22T02:36:42.573Z",
     "coverImage": "images/9780063270183.jpg",
     "pages": 464,
     "link": "https://www.goodreads.com/book/show/221972207-the-mission",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "1773442993232",
@@ -998,26 +998,26 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-03-13T23:03:13.232Z",
-    "updatedAt": "2026-04-17T03:05:22.114Z",
+    "updatedAt": "2026-05-22T02:36:36.098Z",
     "coverImage": "images/9780226837970.jpg",
     "pages": 768,
     "goodreadsId": "215968557",
     "link": "https://www.goodreads.com/book/show/215968557-inventing-the-renaissance",
-    "pollCount": 2
+    "pollCount": 3
   },
   {
     "id": "1773442994630",
     "title": "Sapiens: A Brief History of Humankind",
     "author": "Yuval Noah Harari",
-    "status": "Candidate",
-    "selectedForDate": null,
+    "status": "Selected",
+    "selectedForDate": "2026-08-20",
     "createdAt": "2026-03-13T23:03:14.630Z",
-    "updatedAt": "2026-04-17T03:05:22.114Z",
+    "updatedAt": "2026-05-22T02:36:42.573Z",
     "coverImage": "images/23692271.jpg",
     "pages": 512,
     "goodreadsId": "23692271",
     "link": "https://www.goodreads.com/book/show/23692271-sapiens?from_search=true&from_srp=true&qid=IvXtnNQC17&rank=1",
-    "pollCount": 2
+    "pollCount": 3
   },
   {
     "id": "1773442995919",
@@ -1070,12 +1070,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:22:52.377Z",
-    "updatedAt": "2026-04-17T03:05:22.114Z",
+    "updatedAt": "2026-05-22T02:36:36.098Z",
     "coverImage": "images/9780385521314.jpg",
     "pages": 441,
     "goodreadsId": "40163119",
     "link": "https://www.goodreads.com/book/show/40163119-say-nothing",
-    "pollCount": 1
+    "pollCount": 2
   },
   {
     "id": "1775852576486",
@@ -1115,12 +1115,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:12.751Z",
-    "updatedAt": "2026-04-17T03:05:22.114Z",
+    "updatedAt": "2026-05-22T02:36:36.098Z",
     "coverImage": "images/9780307382467.jpg",
     "pages": 414,
     "goodreadsId": "13330922",
     "link": "https://www.goodreads.com/book/show/13330922-the-black-count",
-    "pollCount": 1
+    "pollCount": 2
   },
   {
     "id": "1775852606471",
@@ -1130,12 +1130,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:26.471Z",
-    "updatedAt": "2026-04-17T03:05:22.114Z",
+    "updatedAt": "2026-05-22T02:36:36.098Z",
     "coverImage": "images/9781250358356.jpg",
     "pages": 400,
     "goodreadsId": "231127455",
     "link": "https://www.goodreads.com/book/show/231127455-the-laws-of-thought",
-    "pollCount": 1
+    "pollCount": 2
   },
   {
     "id": "1779070050509",
@@ -1145,12 +1145,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-05-18T02:07:30.509Z",
-    "updatedAt": "2026-05-18T02:07:30.509Z",
+    "updatedAt": "2026-05-22T02:36:36.098Z",
     "coverImage": "images/9781419766398.jpg",
     "pages": 304,
     "goodreadsId": "61783837",
     "link": "https://www.goodreads.com/book/show/61783837",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1779070053806",
@@ -1160,26 +1160,26 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-05-18T02:07:33.805Z",
-    "updatedAt": "2026-05-18T02:07:33.805Z",
+    "updatedAt": "2026-05-22T02:36:36.098Z",
     "coverImage": "images/9781324094654.jpg",
     "pages": 430,
     "goodreadsId": "226573163",
     "link": "https://www.goodreads.com/book/show/226573163",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1779070122392",
     "title": "The Information: A History, a Theory, a Flood",
     "author": "James Gleick",
-    "status": "Candidate",
+    "isbn": "9780375423727",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2026-05-18T02:08:42.391Z",
-    "updatedAt": "2026-05-18T02:08:42.391Z",
+    "updatedAt": "2026-05-22T02:36:42.573Z",
     "coverImage": "images/9780375423727.jpg",
-    "link": "https://www.goodreads.com/book/show/8701960-the-information",
-    "pollCount": 0,
-    "isbn": "9780375423727",
     "pages": 527,
-    "goodreadsId": "8701960"
+    "goodreadsId": "8701960",
+    "link": "https://www.goodreads.com/book/show/8701960-the-information",
+    "pollCount": 1
   }
 ]
