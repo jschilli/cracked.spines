@@ -1181,5 +1181,20 @@
     "goodreadsId": "8701960",
     "link": "https://www.goodreads.com/book/show/8701960-the-information",
     "pollCount": 1
+  },
+  {
+    "id": "1781407107280",
+    "title": "An Immense World: How Animal Senses Reveal the Hidden Realms Around Us",
+    "author": "Ed Yong",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "createdAt": "2026-06-14T03:18:27.280Z",
+    "updatedAt": "2026-06-14T03:18:27.280Z",
+    "coverImage": "images/9780593133231.jpg",
+    "link": "https://www.goodreads.com/en/book/show/59575939-an-immense-world",
+    "pollCount": 0,
+    "isbn": "9780593133231",
+    "pages": 464,
+    "goodreadsId": "59575939"
   }
 ]
