@@ -1196,5 +1196,50 @@
     "goodreadsId": "59575939",
     "link": "https://www.goodreads.com/en/book/show/59575939-an-immense-world",
     "pollCount": 2
+  },
+  {
+    "id": "1784295783438",
+    "title": "Nothing Like It in the World: The Men Who Built the Transcontinental Railroad 1863-69",
+    "author": "Stephen E. Ambrose",
+    "isbn": "9780743203173",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "createdAt": "2026-07-17T13:43:03.437Z",
+    "updatedAt": "2026-07-17T13:43:03.437Z",
+    "coverImage": "images/9780743203173.jpg",
+    "pages": 432,
+    "goodreadsId": "49255",
+    "link": "https://www.goodreads.com/book/show/49255",
+    "pollCount": 0
+  },
+  {
+    "id": "1784295868825",
+    "title": "Endurance: Shackleton's Incredible Voyage",
+    "author": "Alfred Lansing",
+    "isbn": "9780465062881",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "createdAt": "2026-07-17T13:44:28.824Z",
+    "updatedAt": "2026-07-17T13:44:28.824Z",
+    "coverImage": "images/9780465062881.jpg",
+    "pages": 357,
+    "goodreadsId": "22928871",
+    "link": "https://www.goodreads.com/book/show/22928871",
+    "pollCount": 0
+  },
+  {
+    "id": "1784295869229",
+    "title": "Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen",
+    "author": "Christopher McDougall",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "createdAt": "2026-07-17T13:44:29.228Z",
+    "updatedAt": "2026-07-17T13:44:29.228Z",
+    "coverImage": "images/9780307279187.jpg",
+    "link": "https://www.goodreads.com/book/show/59250955",
+    "pollCount": 0,
+    "isbn": "9780307279187",
+    "pages": 287,
+    "goodreadsId": "59250955"
   }
 ]
