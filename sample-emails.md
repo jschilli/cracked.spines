@@ -16,9 +16,27 @@ Please let Kim know if you’re coming or not (space planning) as you are able.
 
 ## After meeting (rich HTML — canonical from August 2026 onward)
 
-The after-meeting / poll-results email is now a rich HTML artifact, not plain text. The canonical reference file is `email-2026-08-results.html` at the repo root (and `leaderboard-2026-08.html` for the standalone document version). Use those as the template every cycle.
+The after-meeting / poll-results email is a rich HTML artifact, not plain text.
 
-**Structure** (top to bottom):
+**Do not hand-write it and do not copy last month's file.** Since October 2026 both artifacts are generated:
+
+```
+npx tsx scripts/generate-results.ts \
+  --survey <survey-export.json> \
+  --books-json books.json \
+  --prose prose/<YYYY-MM>.json \
+  --out-dir .
+```
+
+This writes `email-<YYYY>-<MM>-results.html` and `leaderboard-<YYYY>-<MM>.html`, where `<YYYY>-<MM>` is the **selection month** (taken from the winner's `selectedForDate`), not the current month.
+
+- **Templates** live in `templates/email-results.html` and `templates/leaderboard.html`. Edit those to change the design — never the generated output.
+- **Prose** lives in `prose/<YYYY-MM>.json` and is the only thing written by hand each cycle: `headline`, `deck`, `intro`, `outcome` (required), plus `tieIntro`/`tieVerdict` (required when there is a tie), `notes` (leaderboard only) and `discussionLead` (optional lead sentence about last month's book).
+- **Everything else is derived** from the survey export and `books.json`: ballot count, Borda scores, ranks, tie analysis, pills, the methodology footnote, and the next-meeting callout. Do not type those by hand.
+
+The generator refuses to run if the winner is not already `Selected` in `books.json`, so run `process-poll-results.ts` first (see `workflows/record-selection.md`).
+
+**Structure** (top to bottom) — this is what the templates produce:
 
 1. Monospace meta line: `Cracked Spines · <Month Year> Poll · N ballots`
 2. Serif headline, telegraphic: `<Winner> takes <SelectionMonth>.`
@@ -26,8 +44,8 @@ The after-meeting / poll-results email is now a rich HTML artifact, not plain te
 4. Two-sentence intro naming winner + Borda total + margin
 5. Outcome callout (ivory-2 bg, clay left border) — one-line winner / runner-up / relegated summary
 6. Leaderboard table — all ranks, Borda points, pills for New/Winner/Tied/Relegated, color-coded rows (olive winner, clay ties, rust relegates)
-7. Methodology footnote: `Borda points = (13 − rank). Total <X> = <voters> × <max> ✓`
-8. **Tiebreaker section** — only if a tie occurred. Explain Condorcet head-to-head; if tied, show secondary breakers (first-place votes, mean rank, median rank) in a 3-up grid with the decisive one tinted clay
+7. Methodology footnote: `Borda points = (N+1 − rank). Total <X> = <voters> × <max> ✓` — where N is the number of candidates **in that poll**. A 9-book poll reads `(10 − rank)`, a 12-book poll reads `(13 − rank)`. The generator derives this; never hardcode a literal.
+8. **Tiebreaker section** — only if a tie occurred. Explain the Condorcet head-to-head; if pairwise cannot separate the books, show the fall-through to first-place votes with the decisive breaker tinted clay. **Do not present mean rank as a breaker** — Borda points are a linear function of rank, so mean rank ties whenever the score ties and can never break anything. (The September 2026 email framed a 4.43/4.43 mean-rank tie as meaningful; it was arithmetic.)
 9. Next-meeting callout (ivory-2 bg, **olive** left border) — date, time, venue, **discussion book** (look up from books.json), candidate list link. **No RSVP request** — that is not part of the cadence
 10. Sign-off: `-Jeff`
 11. Monospace footer rule

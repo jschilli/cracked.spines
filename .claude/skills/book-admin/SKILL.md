@@ -7,7 +7,9 @@ description: Orchestrates Cracked Spines book club administration workflows. Use
 
 Guides Claude through the three recurring book club admin workflows: poll preparation, post-meeting selection recording, and adding new candidate books. Each workflow calls scripts in `scripts/` that operate on `books.json` and `public/images/`, then validates changes before committing.
 
-All scripts output structured JSON: `{ success: boolean, data: ..., error: "...", warnings: [...] }`. Scripts are run via `npx tsx scripts/<name>.ts`. Email templates for poll announcements and after-meeting notes live in `sample-emails.md` at the repo root — treat these as canonical examples to mimic when generating emails in Acts 1 and 2.
+All scripts output structured JSON: `{ success: boolean, data: ..., error: "...", warnings: [...] }`. Scripts are run via `npx tsx scripts/<name>.ts`. Exit code 0 = success (even with warnings), 1 = fatal.
+
+**Emails.** The Act 1 poll announcement is plain text — see `sample-emails.md`. The Act 2 results email and leaderboard are **generated, never hand-written**: `scripts/generate-results.ts` renders `templates/*.html` from the survey export, `books.json`, and a hand-written prose file at `prose/<YYYY-MM>.json`. All poll arithmetic (Borda scores, ranks, tie analysis, the methodology footnote) comes from `scripts/lib/borda.ts`, which is covered by `scripts/lib/borda.test.ts` — never compute it by hand or copy a previous month's numbers.
 
 </objective>
 
@@ -84,8 +86,10 @@ Always show the user a summary of changes before committing and pushing. Include
 | List candidates | `npx tsx scripts/list-candidates.ts --books-json books.json` |
 | Increment polls | `npx tsx scripts/increment-poll-counts.ts --books-json books.json` |
 | Process poll results | `echo '<json>' \| npx tsx scripts/process-poll-results.ts` |
+| Generate results email + leaderboard | `npx tsx scripts/generate-results.ts --survey <export.json> --books-json books.json --prose prose/<YYYY-MM>.json --out-dir .` |
 | Diff report | `npx tsx scripts/diff-report.ts --repo-path .` |
 | Verify site | `npx tsx scripts/verify-site.ts --repo-path .` |
+| Run tests | `npm test` |
 
 ### Commit Conventions
 

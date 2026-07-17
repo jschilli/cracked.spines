@@ -85,14 +85,28 @@ After push, check deployment: `gh run list --limit 1`
 
 ## Step 6: Generate Leaderboard + After-Meeting Email (Rich HTML)
 
-**Default output format:** rich HTML, not plain text. Two artifacts written to the repo root:
+**Both artifacts are generated. Do not hand-write them and do not copy last month's file.**
+
+Write the month's prose to `prose/<YYYY>-<MM>.json` (selection month), then run:
+
+```
+npx tsx scripts/generate-results.ts \
+  --survey <survey-export.json> \
+  --books-json books.json \
+  --prose prose/<YYYY>-<MM>.json \
+  --out-dir .
+```
+
+This writes both artifacts to the repo root:
 
 1. `leaderboard-<YYYY>-<MM>.html` — standalone document version (full warm editorial aesthetic).
 2. `email-<YYYY>-<MM>-results.html` — email-safe version (600px, inline styles, table layout) for paste-into-Gmail.
 
-The `<MM>` is the **selection month** (the month the winning book gets read), not the current month. Example: a poll closing in May that picks the August book → `email-2026-08-results.html`.
+The `<MM>` is the **selection month** (the month the winning book gets read), not the current month — the generator derives it from the winner's `selectedForDate`, so run Step 3 first or it will refuse.
 
-The canonical templates live in `sample-emails.md` under **"## After meeting (rich HTML)"** and **"## Leaderboard (rich HTML)"**. Mimic them exactly — the design tokens, structure, and section order are deliberate.
+Design changes go in `templates/email-results.html` and `templates/leaderboard.html`, never in the output.
+
+The generator computes the Borda scores, ranks, tie analysis, pills, methodology footnote, ballot count, and the next-meeting callout from the survey export and `books.json`. **Do not type any of those by hand** — that is the whole point of the script. Check its JSON output and `warnings` before sending.
 
 ### Required sections (email)
 
@@ -103,8 +117,8 @@ In order, top to bottom:
 4. **Intro prose** — 1–2 sentences, names winner with Borda total and margin
 5. **Outcome callout** — ivory-2 background, clay left border, one-line summary listing winner / runner-up / relegated
 6. **Leaderboard table** — all candidates, ranked, with Borda points. Winner row tinted olive. Tied ranks tinted clay on the rank number. Relegated rows tinted rust. Pills for `New`, `Winner`, `Tied`, `Relegated`
-7. **Methodology footnote** — one monospace line: `Borda points = (13 − rank). Total <X> = <voters> × <max>` ✓
-8. **Tiebreaker section** (only if there was a tie) — explain the head-to-head, show the secondary breakers in a 3-up grid, the decisive one tinted clay
+7. **Methodology footnote** — one monospace line: `Borda points = (N+1 − rank). Total <X> = <voters> × <max>` ✓, where N is the candidate count *in that poll* (9 books → `(10 − rank)`). Derived by the generator; never hardcode a literal.
+8. **Tiebreaker section** (only if there was a tie) — explain the head-to-head; if pairwise cannot separate the books, show the fall-through to first-place votes, decisive breaker tinted clay. **Never show mean rank as a breaker** — it is a linear restatement of the Borda score and ties whenever the score does.
 9. **Next meeting callout** — ivory-2 background, **olive** left border (signals "logistics, good-to-know"). Must include:
    - Date (3rd Thursday of next month), time (5:30pm default), venue (CLJ clubhouse default)
    - **Discussion book**: the currently-Selected book whose `selectedForDate` matches the next meeting date — look it up from books.json. Format: `Discussing: <Title> — <Author>`
@@ -146,7 +160,7 @@ Same content, different chrome: full-page layout (max 880px), can use a `<style>
 Before writing the email:
 - **Discussion book for next meeting**: query books.json for the Selected book whose `selectedForDate` matches the next 3rd-Thursday date. If none matches, ask the user.
 - **Ballot count**: count entries in the survey JSON
-- **Tiebreaker outcome** (if applicable): compute Condorcet head-to-head first; fall through to first-place-votes if pairwise is tied (this fallback was formalized after the August 2026 poll, where River of Doubt and Against the Grain tied at both Borda and pairwise).
+- **Tiebreaker outcome** (if applicable): the generator computes this. Condorcet head-to-head first, falling through to first-place votes when pairwise cannot separate the books — either because a pair split evenly (August 2026: River of Doubt and Against the Grain tied at both Borda and pairwise) or because the members form a cycle (October 2026: three books at 59, every leg 6–5). Supply `tieIntro`/`tieVerdict` prose to match whichever shape it reports.
 
 Present both files to the user. The leaderboard is for archival / linking. The email is for sending.
 
