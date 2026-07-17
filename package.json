@@ -7,7 +7,8 @@
     "dev": "HOST=0.0.0.0 nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest run"
   },
   "dependencies": {
     "@azure/cosmos": "^4.0.0",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@types/node": "^20.11.28",
     "tsx": "^4.21.0",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "vitest": "4.1.10"
   }
 }
