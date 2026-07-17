@@ -496,12 +496,12 @@
     "isbn": "9780767913737",
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2026-06-18T21:18:03.727Z",
+    "updatedAt": "2026-07-17T02:54:42.630Z",
     "coverImage": "images/9780767913737.jpg",
     "pages": 416,
     "goodreadsId": "78508",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 19
+    "pollCount": 20
   },
   {
     "id": "39",
@@ -883,10 +883,10 @@
     "title": "Theo of Golden: A Novel",
     "author": "Allen  Levi",
     "isbn": "9781668236512",
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2026-07-16",
     "createdAt": "2025-11-14T00:12:57.854Z",
-    "updatedAt": "2026-04-17T03:05:29.851Z",
+    "updatedAt": "2026-07-17T02:55:00.561Z",
     "coverImage": "images/9781668236512.jpg",
     "pages": 400,
     "link": "https://www.goodreads.com/book/show/242376245",
@@ -925,14 +925,14 @@
     "title": "The Order of Time",
     "author": "Carlo Rovelli",
     "isbn": "9780735216105",
-    "status": "Candidate",
-    "selectedForDate": null,
+    "status": "Selected",
+    "selectedForDate": "2026-10-15",
     "createdAt": "2025-11-14T00:13:46.658Z",
-    "updatedAt": "2026-06-18T21:18:03.727Z",
+    "updatedAt": "2026-07-17T02:55:00.561Z",
     "coverImage": "images/9780735216105.jpg",
     "pages": 224,
     "link": "https://www.goodreads.com/book/show/36442813-the-order-of-time",
-    "pollCount": 7
+    "pollCount": 8
   },
   {
     "id": "1763079247972",
@@ -998,12 +998,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-03-13T23:03:13.232Z",
-    "updatedAt": "2026-06-18T21:18:03.727Z",
+    "updatedAt": "2026-07-17T02:54:42.630Z",
     "coverImage": "images/9780226837970.jpg",
     "pages": 768,
     "goodreadsId": "215968557",
     "link": "https://www.goodreads.com/book/show/215968557-inventing-the-renaissance",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "1773442994630",
@@ -1070,12 +1070,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:22:52.377Z",
-    "updatedAt": "2026-06-18T21:18:03.727Z",
+    "updatedAt": "2026-07-17T02:54:42.630Z",
     "coverImage": "images/9780385521314.jpg",
     "pages": 441,
     "goodreadsId": "40163119",
     "link": "https://www.goodreads.com/book/show/40163119-say-nothing",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "1775852576486",
@@ -1115,12 +1115,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:12.751Z",
-    "updatedAt": "2026-06-18T21:18:03.727Z",
+    "updatedAt": "2026-07-17T02:54:42.630Z",
     "coverImage": "images/9780307382467.jpg",
     "pages": 414,
     "goodreadsId": "13330922",
     "link": "https://www.goodreads.com/book/show/13330922-the-black-count",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "1775852606471",
@@ -1130,12 +1130,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:26.471Z",
-    "updatedAt": "2026-06-18T21:18:03.727Z",
+    "updatedAt": "2026-07-17T02:54:42.630Z",
     "coverImage": "images/9781250358356.jpg",
     "pages": 400,
     "goodreadsId": "231127455",
     "link": "https://www.goodreads.com/book/show/231127455-the-laws-of-thought",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "1779070050509",
@@ -1145,12 +1145,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-05-18T02:07:30.509Z",
-    "updatedAt": "2026-06-18T21:18:03.727Z",
+    "updatedAt": "2026-07-17T02:54:42.630Z",
     "coverImage": "images/9781419766398.jpg",
     "pages": 304,
     "goodreadsId": "61783837",
     "link": "https://www.goodreads.com/book/show/61783837",
-    "pollCount": 2
+    "pollCount": 3
   },
   {
     "id": "1779070053806",
@@ -1160,12 +1160,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-05-18T02:07:33.805Z",
-    "updatedAt": "2026-06-18T21:18:03.727Z",
+    "updatedAt": "2026-07-17T02:54:42.630Z",
     "coverImage": "images/9781324094654.jpg",
     "pages": 430,
     "goodreadsId": "226573163",
     "link": "https://www.goodreads.com/book/show/226573163",
-    "pollCount": 2
+    "pollCount": 3
   },
   {
     "id": "1779070122392",
@@ -1190,11 +1190,11 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-06-14T03:18:27.280Z",
-    "updatedAt": "2026-06-18T21:18:03.727Z",
+    "updatedAt": "2026-07-17T02:54:42.630Z",
     "coverImage": "images/9780593133231.jpg",
     "pages": 464,
     "goodreadsId": "59575939",
     "link": "https://www.goodreads.com/en/book/show/59575939-an-immense-world",
-    "pollCount": 1
+    "pollCount": 2
   }
 ]
