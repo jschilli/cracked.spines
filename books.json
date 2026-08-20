@@ -496,12 +496,12 @@
     "isbn": "9780767913737",
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2026-07-17T02:54:42.630Z",
+    "updatedAt": "2026-08-20T19:40:54.671Z",
     "coverImage": "images/9780767913737.jpg",
     "pages": 416,
     "goodreadsId": "78508",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 20
+    "pollCount": 21
   },
   {
     "id": "39",
@@ -998,21 +998,21 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-03-13T23:03:13.232Z",
-    "updatedAt": "2026-07-17T02:54:42.630Z",
+    "updatedAt": "2026-08-20T19:40:54.671Z",
     "coverImage": "images/9780226837970.jpg",
     "pages": 768,
     "goodreadsId": "215968557",
     "link": "https://www.goodreads.com/book/show/215968557-inventing-the-renaissance",
-    "pollCount": 5
+    "pollCount": 6
   },
   {
     "id": "1773442994630",
     "title": "Sapiens: A Brief History of Humankind",
     "author": "Yuval Noah Harari",
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2026-08-20",
     "createdAt": "2026-03-13T23:03:14.630Z",
-    "updatedAt": "2026-05-22T02:36:42.573Z",
+    "updatedAt": "2026-08-20T19:41:03.392Z",
     "coverImage": "images/23692271.jpg",
     "pages": 512,
     "goodreadsId": "23692271",
@@ -1070,12 +1070,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:22:52.377Z",
-    "updatedAt": "2026-07-17T02:54:42.630Z",
+    "updatedAt": "2026-08-20T19:40:54.671Z",
     "coverImage": "images/9780385521314.jpg",
     "pages": 441,
     "goodreadsId": "40163119",
     "link": "https://www.goodreads.com/book/show/40163119-say-nothing",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "1775852576486",
@@ -1115,12 +1115,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:12.751Z",
-    "updatedAt": "2026-07-17T02:54:42.630Z",
+    "updatedAt": "2026-08-20T19:40:54.671Z",
     "coverImage": "images/9780307382467.jpg",
     "pages": 414,
     "goodreadsId": "13330922",
     "link": "https://www.goodreads.com/book/show/13330922-the-black-count",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "1775852606471",
@@ -1130,12 +1130,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:26.471Z",
-    "updatedAt": "2026-07-17T02:54:42.630Z",
+    "updatedAt": "2026-08-20T19:40:54.671Z",
     "coverImage": "images/9781250358356.jpg",
     "pages": 400,
     "goodreadsId": "231127455",
     "link": "https://www.goodreads.com/book/show/231127455-the-laws-of-thought",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "1779070050509",
@@ -1145,27 +1145,27 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-05-18T02:07:30.509Z",
-    "updatedAt": "2026-07-17T02:54:42.630Z",
+    "updatedAt": "2026-08-20T19:40:54.671Z",
     "coverImage": "images/9781419766398.jpg",
     "pages": 304,
     "goodreadsId": "61783837",
     "link": "https://www.goodreads.com/book/show/61783837",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "1779070053806",
     "title": "The Gales of November: The Untold Story of the Edmund Fitzgerald",
     "author": "John U. Bacon",
     "isbn": "9781324094654",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2026-05-18T02:07:33.805Z",
-    "updatedAt": "2026-07-17T02:54:42.630Z",
+    "updatedAt": "2026-08-20T19:41:03.392Z",
     "coverImage": "images/9781324094654.jpg",
     "pages": 430,
     "goodreadsId": "226573163",
     "link": "https://www.goodreads.com/book/show/226573163",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "1779070122392",
@@ -1190,42 +1190,42 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-06-14T03:18:27.280Z",
-    "updatedAt": "2026-07-17T02:54:42.630Z",
+    "updatedAt": "2026-08-20T19:40:54.671Z",
     "coverImage": "images/9780593133231.jpg",
     "pages": 464,
     "goodreadsId": "59575939",
     "link": "https://www.goodreads.com/en/book/show/59575939-an-immense-world",
-    "pollCount": 2
+    "pollCount": 3
   },
   {
     "id": "1784295783438",
     "title": "Nothing Like It in the World: The Men Who Built the Transcontinental Railroad 1863-69",
     "author": "Stephen E. Ambrose",
     "isbn": "9780743203173",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2026-07-17T13:43:03.437Z",
-    "updatedAt": "2026-07-17T13:43:03.437Z",
+    "updatedAt": "2026-08-20T19:41:03.392Z",
     "coverImage": "images/9780743203173.jpg",
     "pages": 432,
     "goodreadsId": "49255",
     "link": "https://www.goodreads.com/book/show/49255",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1784295868825",
     "title": "Endurance: Shackleton's Incredible Voyage",
     "author": "Alfred Lansing",
     "isbn": "9780465062881",
-    "status": "Candidate",
-    "selectedForDate": null,
+    "status": "Selected",
+    "selectedForDate": "2026-11-19",
     "createdAt": "2026-07-17T13:44:28.824Z",
-    "updatedAt": "2026-07-17T13:44:28.824Z",
+    "updatedAt": "2026-08-20T19:41:03.392Z",
     "coverImage": "images/9780465062881.jpg",
     "pages": 357,
     "goodreadsId": "22928871",
     "link": "https://www.goodreads.com/book/show/22928871",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1784295869229",
@@ -1235,12 +1235,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-07-17T13:44:29.228Z",
-    "updatedAt": "2026-07-17T13:44:29.228Z",
+    "updatedAt": "2026-08-20T19:40:54.671Z",
     "coverImage": "images/9780307279187.jpg",
     "pages": 287,
     "goodreadsId": "59250955",
     "link": "https://www.goodreads.com/book/show/59250955",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1784297303632",
@@ -1250,26 +1250,26 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-07-17T14:08:23.631Z",
-    "updatedAt": "2026-07-17T14:08:23.631Z",
+    "updatedAt": "2026-08-20T19:40:54.671Z",
     "coverImage": "images/9780062349361.jpg",
     "pages": 288,
     "goodreadsId": "22571015",
     "link": "https://www.goodreads.com/book/show/22571015-something-rich-and-strange",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1784297303960",
     "title": "Arrowsmith",
     "author": "Sinclair Lewis",
-    "status": "Candidate",
+    "isbn": "9780451526915",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2026-07-17T14:08:23.959Z",
-    "updatedAt": "2026-07-17T14:08:23.959Z",
+    "updatedAt": "2026-08-20T19:41:03.392Z",
     "coverImage": "images/9780451526915.jpg",
-    "link": "https://www.goodreads.com/book/show/11389.Arrowsmith",
-    "pollCount": 0,
-    "isbn": "9780451526915",
     "pages": 428,
-    "goodreadsId": "11389"
+    "goodreadsId": "11389",
+    "link": "https://www.goodreads.com/book/show/11389.Arrowsmith",
+    "pollCount": 1
   }
 ]
