@@ -13,9 +13,20 @@ export async function writeBooksJson(path: string, books: Book[]): Promise<void>
   await writeFile(path, json, 'utf-8');
 }
 
+/**
+ * Exact title match, falling back to a unique prefix match. Ballot titles are
+ * display titles and can be shorter than the canonical record (the November 2026
+ * "Easy Money" entry dropped a long subtitle). Ambiguous prefixes match nothing.
+ */
 export function findBookByTitle(books: Book[], title: string): Book | undefined {
-  const normalized = title.toLowerCase().trim();
-  return books.find(b => b.title.toLowerCase().trim() === normalized);
+  const norm = (s: string) => s.toLowerCase().trim();
+  const target = norm(title);
+
+  const exact = books.find(b => norm(b.title) === target);
+  if (exact) return exact;
+
+  const prefix = books.filter(b => norm(b.title).startsWith(target) || target.startsWith(norm(b.title)));
+  return prefix.length === 1 ? prefix[0] : undefined;
 }
 
 export function findDuplicate(books: Book[], candidate: { isbn: string | null; goodreadsId: string | null; title: string }): Book | undefined {

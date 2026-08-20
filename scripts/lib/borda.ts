@@ -114,7 +114,9 @@ export function parseBallots(rows: unknown): Ballot[] {
 
     ballots.push({
       voterId: String(row['User External ID'] ?? ''),
-      ranking: (row[key] as string[]).map(s => s.trim()),
+      // OpinionX started prefixing each ranked entry with a "- " bullet in the
+      // November 2026 export; strip it so titles match books.json.
+      ranking: (row[key] as string[]).map(s => s.trim().replace(/^[-*\u2022]\s+/, '')),
     });
   }
 

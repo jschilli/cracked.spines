@@ -129,6 +129,11 @@ describe('parseBallots', () => {
     expect(parsed).toEqual([{ voterId: 'a', ranking: ['X — Y', 'P — Q'] }]);
   });
 
+  it('strips the bullet prefix OpinionX adds to ranked entries', () => {
+    const parsed = parseBallots([row('a', ['- X \u2014 Y', '- P \u2014 Q'])]);
+    expect(parsed[0].ranking).toEqual(['X \u2014 Y', 'P \u2014 Q']);
+  });
+
   it('drops incomplete and disqualified responses', () => {
     const parsed = parseBallots([
       row('keep', ['X — Y']),
