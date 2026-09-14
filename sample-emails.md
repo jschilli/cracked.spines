@@ -1,18 +1,55 @@
 # Sample emails from book club
 
-## Poll email
+## Poll email (rich HTML — canonical from December 2026 onward)
 
+The poll announcement is a rich HTML artifact, same family as the results email.
+
+**Do not hand-write it and do not copy last month's file.** Generate it:
+
+```
+npx tsx scripts/generate-poll-email.ts \
+  --poll-url <poll URL> \
+  --month <YYYY-MM> \
+  --books-json books.json \
+  --out-dir .
+```
+
+`--month` is the **selection month** — the month the winner is read, not the current month. Writes `email-<YYYY>-<MM>-poll.html`. Optional flags: `--venue` (default `the CLJ clubhouse`), `--time` (default `5:30pm`), `--note` (one plain sentence appended before the sign-off, e.g. an RSVP request when the venue is someone's house).
+
+- **Template** lives in `templates/email-poll.html`. Edit that to change the design — never the generated output.
+- **No prose file.** Unlike the results email, everything is derived; the only hand-written text is the optional `--note`.
+- **Derived from `books.json`**: the candidate list (every `Candidate`, in file order, with a New pill for `pollCount === 0`), the candidate count, and the on-deck schedule (the next three `Selected` books by `selectedForDate`). The generator warns if a `Selected` meeting predates the latest `Read` one — that means Act 2 was skipped for it.
+
+**Structure** (top to bottom):
+
+1. Monospace meta line: `Cracked Spines · <Month Year> Poll · N candidates`
+2. Serif headline: `The <Month Year> poll is open.`
+3. Italic deck naming the next meeting date
+4. Ballot callout (ivory-2 bg, clay left border) — the poll link, nothing else competing with it
+5. `§ On the ballot` — brief candidate table, title over author, oat New pill on debuts
+6. Link to `crackedspin.es/candidate` for covers and detail
+7. On-deck callout (ivory-2 bg, **olive** left border) — next three meetings with dates and books, soonest emphasised, then the standing time/venue line
+8. Optional `--note` sentence
+9. Sign-off: `-Jeff`
+10. Monospace footer rule
+
+Same aesthetic tokens, fonts, and email-safety rules as the results email (see below). To send: open in browser, ⌘A / ⌘C, paste into Gmail compose.
+
+### Legacy plain-text poll email (pre-December 2026)
+
+```
 All,
 
 The poll for April 2026 selection is here: https://app.opinionx.co/9ffebe8a-dc9f-4555-8018-cb5c6e47f01a
 
-We are meeting at Kim Jurrel’s house (details forthcoming) this coming Thursday at 5:30pm
+We are meeting at Kim Jurrel's house (details forthcoming) this coming Thursday at 5:30pm
 
 The current candidates are here: https://crackedspin.es/candidate
 
-Please let Kim know if you’re coming or not (space planning) as you are able.
+Please let Kim know if you're coming or not (space planning) as you are able.
 
 -jeff
+```
 
 ## After meeting (rich HTML — canonical from August 2026 onward)
 

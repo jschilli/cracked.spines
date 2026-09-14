@@ -9,7 +9,7 @@ Guides Claude through the three recurring book club admin workflows: poll prepar
 
 All scripts output structured JSON: `{ success: boolean, data: ..., error: "...", warnings: [...] }`. Scripts are run via `npx tsx scripts/<name>.ts`. Exit code 0 = success (even with warnings), 1 = fatal.
 
-**Emails.** The Act 1 poll announcement is plain text — see `sample-emails.md`. The Act 2 results email and leaderboard are **generated, never hand-written**: `scripts/generate-results.ts` renders `templates/*.html` from the survey export, `books.json`, and a hand-written prose file at `prose/<YYYY-MM>.json`. All poll arithmetic (Borda scores, ranks, tie analysis, the methodology footnote) comes from `scripts/lib/borda.ts`, which is covered by `scripts/lib/borda.test.ts` — never compute it by hand or copy a previous month's numbers.
+**Emails.** Both emails are **generated, never hand-written** — see `sample-emails.md`. The Act 1 poll announcement comes from `scripts/generate-poll-email.ts`, which renders `templates/email-poll.html` from `books.json` and the poll URL. The Act 2 results email and leaderboard come from `scripts/generate-results.ts` renders `templates/*.html` from the survey export, `books.json`, and a hand-written prose file at `prose/<YYYY-MM>.json`. All poll arithmetic (Borda scores, ranks, tie analysis, the methodology footnote) comes from `scripts/lib/borda.ts`, which is covered by `scripts/lib/borda.test.ts` — never compute it by hand or copy a previous month's numbers.
 
 </objective>
 
@@ -86,6 +86,7 @@ Always show the user a summary of changes before committing and pushing. Include
 | List candidates | `npx tsx scripts/list-candidates.ts --books-json books.json` |
 | Increment polls | `npx tsx scripts/increment-poll-counts.ts --books-json books.json` |
 | Process poll results | `echo '<json>' \| npx tsx scripts/process-poll-results.ts` |
+| Generate poll announcement email | `npx tsx scripts/generate-poll-email.ts --poll-url <url> --month <YYYY-MM> --books-json books.json --out-dir .` |
 | Generate results email + leaderboard | `npx tsx scripts/generate-results.ts --survey <export.json> --books-json books.json --prose prose/<YYYY-MM>.json --out-dir .` |
 | Diff report | `npx tsx scripts/diff-report.ts --repo-path .` |
 | Verify site | `npx tsx scripts/verify-site.ts --repo-path .` |
@@ -96,7 +97,7 @@ Always show the user a summary of changes before committing and pushing. Include
 | Act | Message |
 |-----|---------|
 | Act 1 (poll prep with new candidates) | `<Month> poll + new candidates` |
-| Act 1 (poll prep, no new candidates) | no commit needed — nothing changed on disk |
+| Act 1 (poll prep, no new candidates) | `<Month Year> poll email` — only the generated email changed |
 | Act 2 | `<Month Year> selection, relegates` |
 | Act 3 (standalone book adds) | `Adding candidates` |
 

@@ -7,9 +7,9 @@
 **Act 1 produces three artifacts:**
 1. Any new candidate books added (optional)
 2. A bulleted candidate list the user can paste into their polling service
-3. A poll announcement email referencing the live poll URL
+3. A generated HTML poll announcement email (`email-<YYYY>-<MM>-poll.html`)
 
-**If no new books were added, nothing is committed.** The candidate list and email are generated from existing data.
+**If no new books were added, `books.json` is untouched** — the candidate list and email are derived from existing data. The generated email file is still committed (Step 5).
 
 </principles>
 
@@ -61,7 +61,7 @@ Wait for the user to create the poll on their polling service and paste the poll
 
 ## Step 4: QA Gate and Commit (only if new books were added)
 
-If no new books were added in Step 2, skip to Step 5 — there's nothing to commit.
+If no new books were added in Step 2, skip to Step 5 — `books.json` is untouched, so there is nothing for diff-report to check. The generated email still gets committed there.
 
 If new books were added:
 
@@ -97,26 +97,36 @@ After push, check deployment: `gh run list --limit 1`
 ## Step 5: Generate the Poll Email
 
 The user should have already provided the poll URL (from Step 3). Ask for:
-- Location override (optional, only if the next meeting is not at the default CLJ clubhouse)
+- Location override (only if the next meeting is not at the default CLJ clubhouse)
+- Whether a one-line note is needed (an RSVP request is customary when the venue is someone's house, never for the clubhouse)
 
-Calculate dates:
-- Meeting date: 3rd Thursday of the target month (e.g. July 2026 meeting → Thursday July 16, 2026)
-
-The canonical email pattern lives in `sample-emails.md` at the repo root under "## Poll email". Read that file and mimic the voice, structure, and sign-off exactly — Jeff signs with `-Jeff`, the venue line is cadence-sensitive, and the tone is terse. The typical shape is:
+The email is a **generated HTML artifact — do not hand-write it and do not copy last month's file**:
 
 ```
-All,
-
-The poll for <Month Year> selection is here: <poll URL>
-
-We are meeting at <venue> this coming Thursday at 5:30pm.
-
-The current candidates are here: https://crackedspin.es/candidate
-
--Jeff
+npx tsx scripts/generate-poll-email.ts \
+  --poll-url "<poll URL>" \
+  --month <YYYY-MM> \
+  --books-json books.json \
+  --out-dir .
 ```
 
-Present the email for the user to copy.
+`--month` is the **selection month** confirmed in Step 1, as `YYYY-MM`. Add `--venue "<venue>"` and `--note "<sentence>"` if the answers above call for them; `--time` defaults to `5:30pm`.
+
+This writes `email-<YYYY>-<MM>-poll.html`. Everything in it is derived from `books.json` — the candidate table, the New pills, and the on-deck schedule (next three `Selected` meetings with dates). Design changes belong in `templates/email-poll.html`, never in the generated output.
+
+Check the result:
+- `success: true` and no unfilled `{{TOKEN}}` in the output file
+- Read any `warnings`. A stale-selection warning means a past meeting is still `Selected` — run Act 2 for it before sending, or the on-deck section advertises a meeting that already happened.
+- The deck line names the correct next meeting date
+
+Commit the generated file alongside any new candidates — the results emails are tracked the same way, and the archive is how past cycles get re-read:
+
+- `git add email-<YYYY>-<MM>-poll.html`
+- Commit message: `<Month> poll + new candidates` if Step 2 added books, otherwise `<Month Year> poll email`
+
+To send: open it in a browser, ⌘A / ⌘C, paste into Gmail compose.
+
+See `sample-emails.md` under "## Poll email" for the full structure and the legacy plain-text shape.
 
 </process>
 
@@ -127,6 +137,6 @@ This workflow is complete when:
 - [ ] All new books (if any) are added with cover images
 - [ ] If new books added: diff-report passes QA (no pollCountChanges, all hasAllFields true), verify-site passes, changes committed and pushed
 - [ ] Candidate list presented as bullets (no numbers), with *(new)* markers
-- [ ] Poll email generated mimicking `sample-emails.md`, with the poll URL and presented to the user
+- [ ] Poll email generated via `scripts/generate-poll-email.ts` (never hand-written), warnings reviewed, file handed to the user
 
 </success_criteria>
