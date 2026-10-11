@@ -1271,5 +1271,35 @@
     "goodreadsId": "11389",
     "link": "https://www.goodreads.com/book/show/11389.Arrowsmith",
     "pollCount": 1
+  },
+  {
+    "id": "1791734101675",
+    "title": "1929: Inside the Greatest Crash in History – and How It Shattered a Nation",
+    "author": "Andrew Ross Sorkin",
+    "isbn": "9780241479421",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "createdAt": "2026-10-11T15:55:01.674Z",
+    "updatedAt": "2026-10-11T15:55:01.674Z",
+    "coverImage": "images/9780241479421.jpg",
+    "pages": 577,
+    "goodreadsId": "211179569",
+    "link": "https://www.goodreads.com/book/show/211179569",
+    "pollCount": 0
+  },
+  {
+    "id": "1791734330143",
+    "title": "The Eureka Machine: Why AI Is the Key to Unlocking a New Era of Scientific Discoveries",
+    "author": "Richard Socher",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "createdAt": "2026-10-11T15:58:50.143Z",
+    "updatedAt": "2026-10-11T15:58:50.143Z",
+    "coverImage": "images/9781541705791.jpg",
+    "link": "https://www.goodreads.com/book/show/246181969-the-eureka-machine",
+    "pollCount": 0,
+    "isbn": "9781541705791",
+    "pages": 261,
+    "goodreadsId": "246181969"
   }
 ]
