@@ -129,6 +129,11 @@ describe('parseBallots', () => {
     expect(parsed).toEqual([{ voterId: 'a', ranking: ['X — Y', 'P — Q'] }]);
   });
 
+  it('accepts an empty-string column header', () => {
+    const parsed = parseBallots([{ 'User External ID': 'a', '': ['X — Y'], Completed: true }]);
+    expect(parsed[0].ranking).toEqual(['X — Y']);
+  });
+
   it('strips the bullet prefix OpinionX adds to ranked entries', () => {
     const parsed = parseBallots([row('a', ['- X \u2014 Y', '- P \u2014 Q'])]);
     expect(parsed[0].ranking).toEqual(['X \u2014 Y', 'P \u2014 Q']);
@@ -191,6 +196,14 @@ describe('computePoll', () => {
     expect(poll.maxPointsPerBallot).toBe(45);
     expect(poll.totalPoints).toBe(11 * 45);
     expect(poll.totalPoints).toBe(495);
+  });
+
+  it('lists tied books in the order the tiebreaker resolved them', () => {
+    const poll = computePoll(ballots(OCT_BALLOTS));
+    for (const tie of poll.ties) {
+      const listed = poll.standings.filter(s => s.points === tie.points).map(s => s.title);
+      expect(listed).toEqual(tie.resolvedOrder!.map(e => e.split(' \u2014 ')[0]));
+    }
   });
 
   it('assigns competition ranks, sharing the number across ties', () => {
