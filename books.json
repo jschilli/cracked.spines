@@ -496,12 +496,12 @@
     "isbn": "9780767913737",
     "status": "Candidate",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2026-09-17T19:51:02.014Z",
+    "updatedAt": "2026-10-15T19:07:38.470Z",
     "coverImage": "images/9780767913737.jpg",
     "pages": 416,
     "goodreadsId": "78508",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 22
+    "pollCount": 23
   },
   {
     "id": "39",
@@ -925,10 +925,10 @@
     "title": "The Order of Time",
     "author": "Carlo Rovelli",
     "isbn": "9780735216105",
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2026-10-15",
     "createdAt": "2025-11-14T00:13:46.658Z",
-    "updatedAt": "2026-07-17T02:55:00.561Z",
+    "updatedAt": "2026-10-15T19:08:15.409Z",
     "coverImage": "images/9780735216105.jpg",
     "pages": 224,
     "link": "https://www.goodreads.com/book/show/36442813-the-order-of-time",
@@ -1070,12 +1070,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:22:52.377Z",
-    "updatedAt": "2026-09-17T19:51:02.014Z",
+    "updatedAt": "2026-10-15T19:07:38.470Z",
     "coverImage": "images/9780385521314.jpg",
     "pages": 441,
     "goodreadsId": "40163119",
     "link": "https://www.goodreads.com/book/show/40163119-say-nothing",
-    "pollCount": 6
+    "pollCount": 7
   },
   {
     "id": "1775852576486",
@@ -1115,12 +1115,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:12.751Z",
-    "updatedAt": "2026-09-17T19:51:02.014Z",
+    "updatedAt": "2026-10-15T19:07:38.470Z",
     "coverImage": "images/9780307382467.jpg",
     "pages": 414,
     "goodreadsId": "13330922",
     "link": "https://www.goodreads.com/book/show/13330922-the-black-count",
-    "pollCount": 6
+    "pollCount": 7
   },
   {
     "id": "1775852606471",
@@ -1130,12 +1130,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:26.471Z",
-    "updatedAt": "2026-09-17T19:51:02.014Z",
+    "updatedAt": "2026-10-15T19:07:38.470Z",
     "coverImage": "images/9781250358356.jpg",
     "pages": 400,
     "goodreadsId": "231127455",
     "link": "https://www.goodreads.com/book/show/231127455-the-laws-of-thought",
-    "pollCount": 6
+    "pollCount": 7
   },
   {
     "id": "1779070050509",
@@ -1145,12 +1145,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-05-18T02:07:30.509Z",
-    "updatedAt": "2026-09-17T19:51:02.014Z",
+    "updatedAt": "2026-10-15T19:07:38.470Z",
     "coverImage": "images/9781419766398.jpg",
     "pages": 304,
     "goodreadsId": "61783837",
     "link": "https://www.goodreads.com/book/show/61783837",
-    "pollCount": 5
+    "pollCount": 6
   },
   {
     "id": "1779070053806",
@@ -1190,12 +1190,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-06-14T03:18:27.280Z",
-    "updatedAt": "2026-09-17T19:51:02.014Z",
+    "updatedAt": "2026-10-15T19:07:38.470Z",
     "coverImage": "images/9780593133231.jpg",
     "pages": 464,
     "goodreadsId": "59575939",
     "link": "https://www.goodreads.com/en/book/show/59575939-an-immense-world",
-    "pollCount": 4
+    "pollCount": 5
   },
   {
     "id": "1784295783438",
@@ -1235,12 +1235,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-07-17T13:44:29.228Z",
-    "updatedAt": "2026-09-17T19:51:02.014Z",
+    "updatedAt": "2026-10-15T19:07:38.470Z",
     "coverImage": "images/9780307279187.jpg",
     "pages": 287,
     "goodreadsId": "59250955",
     "link": "https://www.goodreads.com/book/show/59250955",
-    "pollCount": 2
+    "pollCount": 3
   },
   {
     "id": "1784297303632",
@@ -1250,12 +1250,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-07-17T14:08:23.631Z",
-    "updatedAt": "2026-09-17T19:51:02.014Z",
+    "updatedAt": "2026-10-15T19:07:38.470Z",
     "coverImage": "images/9780062349361.jpg",
     "pages": 288,
     "goodreadsId": "22571015",
     "link": "https://www.goodreads.com/book/show/22571015-something-rich-and-strange",
-    "pollCount": 2
+    "pollCount": 3
   },
   {
     "id": "1784297303960",
@@ -1277,29 +1277,29 @@
     "title": "1929: Inside the Greatest Crash in History – and How It Shattered a Nation",
     "author": "Andrew Ross Sorkin",
     "isbn": "9780241479421",
-    "status": "Candidate",
-    "selectedForDate": null,
+    "status": "Selected",
+    "selectedForDate": "2027-01-21",
     "createdAt": "2026-10-11T15:55:01.674Z",
-    "updatedAt": "2026-10-11T15:55:01.674Z",
+    "updatedAt": "2026-10-15T19:08:15.409Z",
     "coverImage": "images/9780241479421.jpg",
     "pages": 577,
     "goodreadsId": "211179569",
     "link": "https://www.goodreads.com/book/show/211179569",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1791734330143",
     "title": "The Eureka Machine: Why AI Is the Key to Unlocking a New Era of Scientific Discoveries",
     "author": "Richard Socher",
+    "isbn": "9781541705791",
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-10-11T15:58:50.143Z",
-    "updatedAt": "2026-10-11T15:58:50.143Z",
+    "updatedAt": "2026-10-15T19:07:38.470Z",
     "coverImage": "images/9781541705791.jpg",
-    "link": "https://www.goodreads.com/book/show/246181969-the-eureka-machine",
-    "pollCount": 0,
-    "isbn": "9781541705791",
     "pages": 261,
-    "goodreadsId": "246181969"
+    "goodreadsId": "246181969",
+    "link": "https://www.goodreads.com/book/show/246181969-the-eureka-machine",
+    "pollCount": 1
   }
 ]
