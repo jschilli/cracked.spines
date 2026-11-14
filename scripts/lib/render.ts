@@ -207,43 +207,46 @@ function pairwiseVerdict(tie: TieAnalysis): string {
  * ties whenever the score does, so it cannot serve as a breaker.
  */
 export function renderEmailTie(ctx: RenderContext): string {
-  const tie = ctx.poll.ties[0];
-  if (!tie) return '';
+  if (!ctx.poll.ties.length) return '';
 
-  const ordered = orderLegs(tie);
-  const legs = ordered
-    .map((p, i) => {
-      const winner = p.winner ? shortName(p.winner) : null;
-      const loser = p.winner === p.a ? shortName(p.b) : shortName(p.a);
-      const hi = Math.max(p.aWins, p.bWins);
-      const lo = Math.min(p.aWins, p.bWins);
-      const body = winner
-        ? `<strong style="color:${TOKENS.clay};">${escapeHtml(winner)} ${hi}</strong> · ${escapeHtml(loser)} ${lo}`
-        : `${escapeHtml(shortName(p.a))} ${p.aWins} · ${escapeHtml(shortName(p.b))} ${p.bWins}`;
-      const rightBorder = i < ordered.length - 1 ? 'border-right:1px solid rgba(20,20,19,0.12);' : '';
-      return `      <td width="${Math.floor(100 / ordered.length)}%" style="padding:14px 16px;background:rgba(217,119,87,0.08);${rightBorder}">
+  const evidence = ctx.poll.ties.map(tie => {
+    const ordered = orderLegs(tie);
+    const legs = ordered
+      .map((p, i) => {
+        const winner = p.winner ? shortName(p.winner) : null;
+        const loser = p.winner === p.a ? shortName(p.b) : shortName(p.a);
+        const hi = Math.max(p.aWins, p.bWins);
+        const lo = Math.min(p.aWins, p.bWins);
+        const body = winner
+          ? `<strong style="color:${TOKENS.clay};">${escapeHtml(winner)} ${hi}</strong> · ${escapeHtml(loser)} ${lo}`
+          : `${escapeHtml(shortName(p.a))} ${p.aWins} · ${escapeHtml(shortName(p.b))} ${p.bWins}`;
+        const rightBorder = i < ordered.length - 1 ? 'border-right:1px solid rgba(20,20,19,0.12);' : '';
+        return `      <td width="${Math.floor(100 / ordered.length)}%" style="padding:14px 16px;background:rgba(217,119,87,0.08);${rightBorder}">
         <div style="font-family:'SF Mono',Menlo,monospace;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:${TOKENS.clay};margin-bottom:4px;">Head-to-head</div>
         <div style="font-family:Georgia,serif;font-size:15px;color:${TOKENS.slate};">${body}</div>
       </td>`;
-    })
-    .join('\n');
+      })
+      .join('\n');
+
+    return `${ctx.poll.ties.length > 1 ? `<tr><td style="padding:0 28px 8px;font-family:Georgia,serif;font-size:17px;color:${TOKENS.slate};">The tie at ${tie.points} points</td></tr>\n` : ''}<tr><td style="padding:0 28px 16px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;border:1px solid rgba(20,20,19,0.12);">
+    <tr>
+${legs}
+    </tr>
+  </table>
+</td></tr>`;
+  }).join('\n\n');
 
   return `<!-- Tiebreaker -->
 <tr><td style="padding:0 28px 12px;font-family:Georgia,serif;font-size:20px;font-weight:600;color:${TOKENS.slate};">
-<span style="color:${TOKENS.clay};">§</span> About that tie
+<span style="color:${TOKENS.clay};">§</span> About ${ctx.poll.ties.length > 1 ? 'those ties' : 'that tie'}
 </td></tr>
 
 <tr><td style="padding:0 28px 16px;font-family:Georgia,serif;font-size:16px;line-height:1.6;color:${TOKENS.slate};">
 ${ctx.prose.tieIntro ?? ''}
 </td></tr>
 
-<tr><td style="padding:0 28px 16px;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse;border:1px solid rgba(20,20,19,0.12);">
-    <tr>
-${legs}
-    </tr>
-  </table>
-</td></tr>
+${evidence}
 
 <tr><td style="padding:0 28px 28px;font-family:Georgia,serif;font-size:16px;line-height:1.6;color:${TOKENS.slate};">
 ${ctx.prose.tieVerdict ?? ''}
@@ -252,41 +255,40 @@ ${ctx.prose.tieVerdict ?? ''}
 
 /** The tie section for the standalone document, with the full ballot table. */
 export function renderDocTie(ctx: RenderContext): string {
-  const tie = ctx.poll.ties[0];
-  if (!tie) return '';
-
-  const legs = orderLegs(tie)
-    .map((p, i) => {
-      const winner = p.winner ? shortName(p.winner) : null;
-      const loser = p.winner === p.a ? shortName(p.b) : shortName(p.a);
-      const hi = Math.max(p.aWins, p.bWins);
-      const lo = Math.min(p.aWins, p.bWins);
-      const val = winner
-        ? `<strong>${escapeHtml(winner)} ${hi}</strong> · ${escapeHtml(loser)} ${lo}`
-        : `${escapeHtml(shortName(p.a))} ${p.aWins} · ${escapeHtml(shortName(p.b))} ${p.bWins}`;
-      return `      <div class="leg">
+  if (!ctx.poll.ties.length) return '';
+  return ctx.poll.ties.map((tie, index) => {
+    const legs = orderLegs(tie)
+      .map((p, i) => {
+        const winner = p.winner ? shortName(p.winner) : null;
+        const loser = p.winner === p.a ? shortName(p.b) : shortName(p.a);
+        const hi = Math.max(p.aWins, p.bWins);
+        const lo = Math.min(p.aWins, p.bWins);
+        const val = winner
+          ? `<strong>${escapeHtml(winner)} ${hi}</strong> · ${escapeHtml(loser)} ${lo}`
+          : `${escapeHtml(shortName(p.a))} ${p.aWins} · ${escapeHtml(shortName(p.b))} ${p.bWins}`;
+        return `      <div class="leg">
         <div class="label">Leg ${i + 1}</div>
         <div class="val">${val}</div>
       </div>`;
-    })
-    .join('\n');
+      })
+      .join('\n');
 
-  const heads = tie.members.map(m => `<th class="num">${escapeHtml(shortName(m))}</th>`).join('');
-  const ballotRows = ctx.poll.ballots
-    .map(b => {
-      const cells = tie.members.map(m => `<td>${b.ranking.indexOf(m) + 1}</td>`).join('');
-      return `        <tr><td>${escapeHtml(b.voterId.slice(0, 4))}</td>${cells}</tr>`;
-    })
-    .join('\n');
+    const heads = tie.members.map(m => `<th class="num">${escapeHtml(shortName(m))}</th>`).join('');
+    const ballotRows = ctx.poll.ballots
+      .map(b => {
+        const cells = tie.members.map(m => `<td>${b.ranking.indexOf(m) + 1}</td>`).join('');
+        return `        <tr><td>${escapeHtml(b.voterId.slice(0, 4))}</td>${cells}</tr>`;
+      })
+      .join('\n');
 
-  const fpv = tie.members.map(m => `${escapeHtml(shortName(m))} ${tie.firstPlaceVotes[m]}`).join(' · ');
-  const fpvDecisive = tie.resolvedBy === 'first-place-votes';
+    const fpv = tie.members.map(m => `${escapeHtml(shortName(m))} ${tie.firstPlaceVotes[m]}`).join(' · ');
+    const fpvDecisive = tie.resolvedBy === 'first-place-votes';
 
-  return `  <h2>${tie.members.length > 2 ? `The ${numberWord(tie.members.length)}-way tie at ${tie.points}` : `The tie at ${tie.points}`}</h2>
+    return `  <h2>${tie.members.length > 2 ? `The ${numberWord(tie.members.length)}-way tie at ${tie.points}` : `The tie at ${tie.points}`}</h2>
 
   <div class="tiebreak">
     <h3>${tie.members.map(m => escapeHtml(shortName(m))).join(' vs. ')} <span class="verdict">All at ${tie.points} pts</span></h3>
-    <p>${ctx.prose.tieIntro ?? ''}</p>
+${index === 0 ? `    <p>${ctx.prose.tieIntro ?? ''}</p>` : ''}
 
     <div class="cycle">
 ${legs}
@@ -314,8 +316,9 @@ ${ballotRows}
       </div>
     </div>
 
-    <p style="margin-top:20px">${ctx.prose.tieVerdict ?? ''}</p>
+${index === ctx.poll.ties.length - 1 ? `    <p style="margin-top:20px">${ctx.prose.tieVerdict ?? ''}</p>` : ''}
   </div>`;
+  }).join('\n\n');
 }
 
 function numberWord(n: number): string {
@@ -325,9 +328,11 @@ function numberWord(n: number): string {
 /** Methodology paragraph for the standalone document, derived from the field. */
 export function methodology(ctx: RenderContext): string {
   const n = ctx.poll.candidateCount;
-  const tie = ctx.poll.ties[0];
-  const tail = tie
-    ? `This round produced a tie at ${tie.points} points, resolved by ${tie.resolvedBy.replace(/-/g, ' ')}.`
+  const ties = ctx.poll.ties;
+  const tail = ties.length === 1
+    ? `This round produced a tie at ${ties[0].points} points, resolved by ${ties[0].resolvedBy.replace(/-/g, ' ')}.`
+    : ties.length > 1
+      ? `This round produced ${ties.length} ties: ${ties.map(tie => `${tie.points} points, resolved by ${tie.resolvedBy.replace(/-/g, ' ')}`).join('; ')}.`
     : 'No tie occurred at the top of this round, so no tiebreaker was applied to the selection.';
   return `Borda count with ${n} candidates: 1st place = ${n} points, last place = 1 point. ${ctx.poll.ballots.length} forced-rank ballots collected via survey. Ties resolve per the club's <em>Polling Methodology</em> memo (formalized after the February 2026 tie): Condorcet head-to-head first, then first-place votes if pairwise cannot separate the books. ${tail}`;
 }
