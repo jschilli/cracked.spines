@@ -6,7 +6,7 @@
 
 **Act 1 produces three artifacts:**
 1. Any new candidate books added (optional)
-2. A bulleted candidate list the user can paste into their polling service
+2. A plain candidate list (one per line) the user can paste into their polling service
 3. A generated HTML poll announcement email (`email-<YYYY>-<MM>-poll.html`)
 
 **If no new books were added, `books.json` is untouched** — the candidate list and email are derived from existing data. The generated email file is still committed (Step 5).
@@ -49,12 +49,12 @@ Run:
 npx tsx scripts/list-candidates.ts --books-json books.json
 ```
 
-Present the candidate list to the user as a **bulleted list — no leading numbers**. Numbered lists confuse the polling service's rank-order ballot setup (the user has to re-number them manually). Mark newly-added candidates with *(new)*. Example:
+Present the candidate list to the user as **plain lines — no leading numbers, no `-` bullets, no markers**. Whatever prefixes a line gets pasted into the polling service's ballot and has to be stripped by hand. Name newly-added candidates in a separate sentence after the list, not inline. Example:
 
 ```
-- The River of Doubt — Candice Millard
-- The Book Thief — Markus Zusak
-- Say Nothing — Patrick Radden Keefe *(new)*
+The River of Doubt — Candice Millard
+The Book Thief — Markus Zusak
+Say Nothing — Patrick Radden Keefe
 ```
 
 Wait for the user to create the poll on their polling service and paste the poll URL back.
@@ -136,7 +136,7 @@ This workflow is complete when:
 - [ ] Target month confirmed with the user
 - [ ] All new books (if any) are added with cover images
 - [ ] If new books added: diff-report passes QA (no pollCountChanges, all hasAllFields true), verify-site passes, changes committed and pushed
-- [ ] Candidate list presented as bullets (no numbers), with *(new)* markers
+- [ ] Candidate list presented as plain lines (no numbers, bullets, or markers); new candidates named separately
 - [ ] Poll email generated via `scripts/generate-poll-email.ts` (never hand-written), warnings reviewed, file handed to the user
 
 </success_criteria>

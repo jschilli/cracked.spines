@@ -109,8 +109,9 @@ export function parseBallots(rows: unknown): Ballot[] {
   for (const row of rows as Record<string, unknown>[]) {
     if (row.Completed === false || row.Disqualified === true) continue;
 
+    // The October 2026 export headed the ranking column with an empty string.
     const key = Object.keys(row).find(k => Array.isArray(row[k]));
-    if (!key) throw new Error(`no ranked-choice array found in response ${String(row['User External ID'])}`);
+    if (key === undefined) throw new Error(`no ranked-choice array found in response ${String(row['User External ID'])}`);
 
     ballots.push({
       voterId: String(row['User External ID'] ?? ''),
@@ -245,6 +246,19 @@ export function computePoll(ballots: Ballot[]): Poll {
 
   const byPoints = [...points.entries()].sort((a, b) => b[1] - a[1]);
 
+  const ties: TieAnalysis[] = [];
+  const seen = new Set<number>();
+  for (const [, pts] of byPoints) {
+    if (seen.has(pts)) continue;
+    seen.add(pts);
+    const members = byPoints.filter(([, p]) => p === pts).map(([e]) => e);
+    if (members.length > 1) ties.push(analyzeTie(ballots, members, pts));
+  }
+
+  // Within a tied score, list books in the order the tiebreaker resolved them.
+  const tieOrder = new Map(ties.flatMap(t => (t.resolvedOrder ?? []).map((e, i) => [e, i] as const)));
+  byPoints.sort((a, b) => b[1] - a[1] || (tieOrder.get(a[0]) ?? 0) - (tieOrder.get(b[0]) ?? 0));
+
   const standings: Standing[] = byPoints.map(([entry, pts]) => {
     const { title, author } = splitEntry(entry);
     return {
@@ -257,15 +271,6 @@ export function computePoll(ballots: Ballot[]): Poll {
       tiedWith: byPoints.filter(([e, p]) => p === pts && e !== entry).map(([e]) => splitEntry(e).title),
     };
   });
-
-  const ties: TieAnalysis[] = [];
-  const seen = new Set<number>();
-  for (const [entry, pts] of byPoints) {
-    if (seen.has(pts)) continue;
-    seen.add(pts);
-    const members = byPoints.filter(([, p]) => p === pts).map(([e]) => e);
-    if (members.length > 1) ties.push(analyzeTie(ballots, members, pts));
-  }
 
   return {
     ballots,
