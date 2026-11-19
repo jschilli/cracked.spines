@@ -494,14 +494,14 @@
     "title": "The River of Doubt",
     "author": "Candice Millard",
     "isbn": "9780767913737",
-    "status": "Candidate",
+    "status": "Relegated",
     "createdAt": "2024-09-13T09:16:59.089Z",
-    "updatedAt": "2026-10-15T19:07:38.470Z",
+    "updatedAt": "2026-11-19T21:54:02.102Z",
     "coverImage": "images/9780767913737.jpg",
     "pages": 416,
     "goodreadsId": "78508",
     "link": "https://www.goodreads.com/book/show/78508",
-    "pollCount": 23
+    "pollCount": 24
   },
   {
     "id": "39",
@@ -1070,12 +1070,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:22:52.377Z",
-    "updatedAt": "2026-10-15T19:07:38.470Z",
+    "updatedAt": "2026-11-19T21:53:58.843Z",
     "coverImage": "images/9780385521314.jpg",
     "pages": 441,
     "goodreadsId": "40163119",
     "link": "https://www.goodreads.com/book/show/40163119-say-nothing",
-    "pollCount": 7
+    "pollCount": 8
   },
   {
     "id": "1775852576486",
@@ -1115,12 +1115,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:12.751Z",
-    "updatedAt": "2026-10-15T19:07:38.470Z",
+    "updatedAt": "2026-11-19T21:53:58.843Z",
     "coverImage": "images/9780307382467.jpg",
     "pages": 414,
     "goodreadsId": "13330922",
     "link": "https://www.goodreads.com/book/show/13330922-the-black-count",
-    "pollCount": 7
+    "pollCount": 8
   },
   {
     "id": "1775852606471",
@@ -1130,27 +1130,27 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-04-10T20:23:26.471Z",
-    "updatedAt": "2026-10-15T19:07:38.470Z",
+    "updatedAt": "2026-11-19T21:53:58.843Z",
     "coverImage": "images/9781250358356.jpg",
     "pages": 400,
     "goodreadsId": "231127455",
     "link": "https://www.goodreads.com/book/show/231127455-the-laws-of-thought",
-    "pollCount": 7
+    "pollCount": 8
   },
   {
     "id": "1779070050509",
     "title": "Easy Money: Cryptocurrency, Casino Capitalism, and the Golden Age of Fraud: The Basis for the Documentary Everyone Is Lying to You for Money",
     "author": "Ben McKenzie",
     "isbn": "9781419766398",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2026-05-18T02:07:30.509Z",
-    "updatedAt": "2026-10-15T19:07:38.470Z",
+    "updatedAt": "2026-11-19T21:54:02.102Z",
     "coverImage": "images/9781419766398.jpg",
     "pages": 304,
     "goodreadsId": "61783837",
     "link": "https://www.goodreads.com/book/show/61783837",
-    "pollCount": 6
+    "pollCount": 7
   },
   {
     "id": "1779070053806",
@@ -1190,12 +1190,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-06-14T03:18:27.280Z",
-    "updatedAt": "2026-10-15T19:07:38.470Z",
+    "updatedAt": "2026-11-19T21:53:58.843Z",
     "coverImage": "images/9780593133231.jpg",
     "pages": 464,
     "goodreadsId": "59575939",
     "link": "https://www.goodreads.com/en/book/show/59575939-an-immense-world",
-    "pollCount": 5
+    "pollCount": 6
   },
   {
     "id": "1784295783438",
@@ -1217,10 +1217,10 @@
     "title": "Endurance: Shackleton's Incredible Voyage",
     "author": "Alfred Lansing",
     "isbn": "9780465062881",
-    "status": "Selected",
+    "status": "Read",
     "selectedForDate": "2026-11-19",
     "createdAt": "2026-07-17T13:44:28.824Z",
-    "updatedAt": "2026-08-20T19:41:03.392Z",
+    "updatedAt": "2026-11-19T21:54:02.102Z",
     "coverImage": "images/9780465062881.jpg",
     "pages": 357,
     "goodreadsId": "22928871",
@@ -1232,15 +1232,15 @@
     "title": "Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen",
     "author": "Christopher McDougall",
     "isbn": "9780307279187",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2026-07-17T13:44:29.228Z",
-    "updatedAt": "2026-10-15T19:07:38.470Z",
+    "updatedAt": "2026-11-19T21:54:02.102Z",
     "coverImage": "images/9780307279187.jpg",
     "pages": 287,
     "goodreadsId": "59250955",
     "link": "https://www.goodreads.com/book/show/59250955",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "1784297303632",
@@ -1250,12 +1250,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-07-17T14:08:23.631Z",
-    "updatedAt": "2026-10-15T19:07:38.470Z",
+    "updatedAt": "2026-11-19T21:53:58.843Z",
     "coverImage": "images/9780062349361.jpg",
     "pages": 288,
     "goodreadsId": "22571015",
     "link": "https://www.goodreads.com/book/show/22571015-something-rich-and-strange",
-    "pollCount": 3
+    "pollCount": 4
   },
   {
     "id": "1784297303960",
@@ -1292,15 +1292,15 @@
     "title": "The Eureka Machine: Why AI Is the Key to Unlocking a New Era of Scientific Discoveries",
     "author": "Richard Socher",
     "isbn": "9781541705791",
-    "status": "Candidate",
+    "status": "Relegated",
     "selectedForDate": null,
     "createdAt": "2026-10-11T15:58:50.143Z",
-    "updatedAt": "2026-10-15T19:07:38.470Z",
+    "updatedAt": "2026-11-19T21:54:02.102Z",
     "coverImage": "images/9781541705791.jpg",
     "pages": 261,
     "goodreadsId": "246181969",
     "link": "https://www.goodreads.com/book/show/246181969-the-eureka-machine",
-    "pollCount": 1
+    "pollCount": 2
   },
   {
     "id": "1794671819850",
@@ -1310,27 +1310,27 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-11-14T15:56:59.849Z",
-    "updatedAt": "2026-11-14T15:56:59.849Z",
+    "updatedAt": "2026-11-19T21:53:58.843Z",
     "coverImage": "images/9780743477888.jpg",
     "pages": 592,
     "goodreadsId": "45546",
     "link": "https://www.goodreads.com/book/show/45546.Undaunted_Courage",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1794671820170",
     "title": "Rubicon: The Last Years of the Roman Republic",
     "author": "Tom Holland",
     "isbn": "9781400078974",
-    "status": "Candidate",
-    "selectedForDate": null,
+    "status": "Selected",
+    "selectedForDate": "2027-02-18",
     "createdAt": "2026-11-14T15:57:00.169Z",
-    "updatedAt": "2026-11-14T15:57:00.169Z",
+    "updatedAt": "2026-11-19T21:54:02.102Z",
     "coverImage": "images/9781400078974.jpg",
     "pages": 408,
     "goodreadsId": "91017",
     "link": "https://www.goodreads.com/book/show/91017.Rubicon",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1794671844949",
@@ -1340,12 +1340,12 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-11-14T15:57:24.948Z",
-    "updatedAt": "2026-11-14T15:57:24.948Z",
+    "updatedAt": "2026-11-19T21:53:58.843Z",
     "coverImage": "images/9780679740674.jpg",
     "pages": 259,
     "goodreadsId": "216363",
     "link": "https://www.goodreads.com/book/show/216363.The_Man_in_the_High_Castle",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1794672048334",
@@ -1355,26 +1355,26 @@
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-11-14T16:00:48.333Z",
-    "updatedAt": "2026-11-14T16:00:48.333Z",
+    "updatedAt": "2026-11-19T21:53:58.843Z",
     "coverImage": "images/9780670037605.jpg",
     "pages": 461,
     "goodreadsId": "4820",
     "link": "https://www.goodreads.com/book/show/4820.Mayflower",
-    "pollCount": 0
+    "pollCount": 1
   },
   {
     "id": "1794672048792",
     "title": "Family of Spies",
     "author": "Christine Kuehn",
+    "isbn": "9781250344465",
     "status": "Candidate",
     "selectedForDate": null,
     "createdAt": "2026-11-14T16:00:48.792Z",
-    "updatedAt": "2026-11-14T16:00:48.792Z",
+    "updatedAt": "2026-11-19T21:53:58.843Z",
     "coverImage": "images/9781250344465.jpg",
-    "link": "https://www.goodreads.com/book/show/222376793-family-of-spies",
-    "pollCount": 0,
-    "isbn": "9781250344465",
     "pages": 272,
-    "goodreadsId": "222376793"
+    "goodreadsId": "222376793",
+    "link": "https://www.goodreads.com/book/show/222376793-family-of-spies",
+    "pollCount": 1
   }
 ]
