@@ -25,6 +25,7 @@ interface Args {
   prose: string;
   outDir: string;
   templates: string;
+  venue: string;
 }
 
 function parseArgs(argv: string[]): Args {
@@ -42,6 +43,7 @@ function parseArgs(argv: string[]): Args {
     prose: get('--prose'),
     outDir: get('--out-dir', '.'),
     templates: get('--templates', 'templates'),
+    venue: get('--venue', 'CLJ clubhouse'),
   };
 }
 
@@ -102,7 +104,7 @@ async function main() {
     const meeting: MeetingInfo = {
       dateLabel: format(new Date(meetingDate + 'T00:00:00'), 'EEEE, MMMM d'),
       time: '5:30pm',
-      venue: 'CLJ clubhouse',
+      venue: args.venue,
       discussionTitle: discussionBook.title,
       discussionAuthor: discussionBook.author.replace(/\s+/g, ' ').trim(),
     };
@@ -152,7 +154,7 @@ ${prose.discussionLead}
       TIE_SECTION: renderEmailTie(ctx),
       MEETING_DATE: meeting.dateLabel,
       MEETING_TIME: meeting.time,
-      MEETING_VENUE: meeting.venue,
+      MEETING_VENUE: escapeHtml(meeting.venue),
       DISCUSSION_TITLE: escapeHtml(meeting.discussionTitle),
       DISCUSSION_AUTHOR: escapeHtml(meeting.discussionAuthor),
     });
