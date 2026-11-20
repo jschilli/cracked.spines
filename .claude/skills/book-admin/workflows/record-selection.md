@@ -16,7 +16,7 @@ This runs first so the website reflects the current count while the poll was liv
 Ask the user for:
 1. **Ranked poll results** - ordered list of titles, most votes first. This is the primary input.
 2. **Discussion commentary** - 1-2 sentences about the discussion of the previous book
-3. **Location override** (optional) - only if next meeting is not at CLJ clubhouse
+3. **Location override** (optional) - only if next meeting is not at CLJ clubhouse; pass it to `generate-results.ts` as `--venue "<place>"` in Step 6
 
 ## Step 3: Process Poll Results
 

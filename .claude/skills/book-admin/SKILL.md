@@ -87,7 +87,7 @@ Always show the user a summary of changes before committing and pushing. Include
 | Increment polls | `npx tsx scripts/increment-poll-counts.ts --books-json books.json` |
 | Process poll results | `echo '<json>' \| npx tsx scripts/process-poll-results.ts` |
 | Generate poll announcement email | `npx tsx scripts/generate-poll-email.ts --poll-url <url> --month <YYYY-MM> --books-json books.json --out-dir .` |
-| Generate results email + leaderboard | `npx tsx scripts/generate-results.ts --survey <export.json> --books-json books.json --prose prose/<YYYY-MM>.json --out-dir .` |
+| Generate results email + leaderboard | `npx tsx scripts/generate-results.ts --survey <export.json> --books-json books.json --prose prose/<YYYY-MM>.json --out-dir . [--venue "<place>"]` |
 | Diff report | `npx tsx scripts/diff-report.ts --repo-path .` |
 | Verify site | `npx tsx scripts/verify-site.ts --repo-path .` |
 | Run tests | `npm test` |
