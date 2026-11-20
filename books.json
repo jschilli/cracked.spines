@@ -1376,5 +1376,20 @@
     "goodreadsId": "222376793",
     "link": "https://www.goodreads.com/book/show/222376793-family-of-spies",
     "pollCount": 1
+  },
+  {
+    "id": "1795207632158",
+    "title": "The Killer Angels (The Civil War Trilogy, #2)",
+    "author": "Michael Shaara",
+    "status": "Candidate",
+    "selectedForDate": null,
+    "createdAt": "2026-11-20T20:47:12.157Z",
+    "updatedAt": "2026-11-20T20:47:12.157Z",
+    "coverImage": "images/9780345348104.jpg",
+    "link": "https://www.goodreads.com/book/show/682804",
+    "pollCount": 0,
+    "isbn": "9780345348104",
+    "pages": 345,
+    "goodreadsId": "682804"
   }
 ]
